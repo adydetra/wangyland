@@ -8,21 +8,21 @@
       <div class="container mx-auto flex justify-between">
         <p class="d-flex me-4 mb-0">
           <i class="bi-person custom-icon me-2"></i>
-          <strong class="text-indigo-100">Welcome to Wangyland Website</strong>
+          <strong class="text-indigo-100 text-xs">Welcome to Wangyland Website</strong>
         </p>
-        <p class="text-indigo-100 font-bold tracking-wide">IP: WANGYLANDID.ATERNOS.ME</p>
+        <p class="text-indigo-100 font-bold tracking-wide hidden lg:block">IP: WANGYLANDID.ATERNOS.ME</p>
       </div>
     </header>
 
     <!-- Navigation -->
-    <div class="container mx-auto">
+    <div class="container mx-auto px-3 lg:px-0">
       <nav class="bg-transparent py-7 flex justify-between">
         <ul class="flex gap-4 items-center">
           <img src="/img/logo.png" alt="logo" class="w-10">
           <p class="font-bold text-2xl outfit-600">Wangyland</p>
         </ul>
         <ul class="flex gap-16 items-center outfit-400"> 
-          <li class="text-white"><NuxtLink :to="{ name: 'index' }">Home</NuxtLink></li>
+          <li class="text-white hidden md:block"><NuxtLink :to="{ name: 'index' }">Home</NuxtLink></li>
           <li class="text-white"><NuxtLink :to="{ name: 'guide' }">Guide</NuxtLink></li>
         </ul>
       </nav>
