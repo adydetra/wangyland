@@ -1,0 +1,33 @@
+<template>
+
+  <!-- Content Section -->
+  <section class="min-h-screen bg-slate-800 text-white">
+
+    <!-- Header -->
+    <header class="bg-indigo-600 text-gray-900 py-3 px-4">
+      <div class="container mx-auto flex justify-between">
+        <p class="d-flex me-4 mb-0">
+          <i class="bi-person custom-icon me-2"></i>
+          <strong class="text-indigo-100">Welcome to Wangyland Website</strong>
+        </p>
+        <p class="text-indigo-100 font-bold tracking-wide">IP: WANGYLANDID.ATERNOS.ME</p>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <div class="container mx-auto z-10">
+      <nav class="bg-transparent py-7 flex justify-between">
+        <ul class="flex gap-4 items-center">
+          <img src="/img/logo.png" alt="logo" class="w-10">
+          <p class="font-bold text-2xl">Wangyland</p>
+        </ul>
+        <ul class="flex gap-20 items-center"> 
+          <li class="text-white"><NuxtLink :to="{ name: 'index' }">Home</NuxtLink></li>
+          <li class="text-white"><NuxtLink :to="{ name: 'guide' }">Guide</NuxtLink></li>
+        </ul>
+      </nav>
+    </div>
+
+    <NuxtPage />
+  </section>
+</template>
