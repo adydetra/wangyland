@@ -8,7 +8,7 @@
       <div class="container mx-auto flex justify-between">
         <p class="d-flex me-4 mb-0">
           <i class="bi-person custom-icon me-2"></i>
-          <strong class="text-indigo-100 text-xs">Welcome to Wangyland Website</strong>
+          <strong class="text-indigo-100 text-xs lg:text-lg">Welcome to Wangyland Website</strong>
         </p>
         <p class="text-indigo-100 font-bold tracking-wide hidden lg:block">IP: WANGYLANDID.ATERNOS.ME</p>
       </div>
