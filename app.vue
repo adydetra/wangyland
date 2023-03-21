@@ -19,7 +19,7 @@
       <nav class="bg-transparent py-7 flex justify-between">
         <ul class="flex gap-4 items-center">
           <img src="/img/logo.png" alt="logo" class="w-10">
-          <p class="font-bold text-2xl">Wangyland</p>
+          <p class="font-bold text-2xl outfit-600">Wangyland</p>
         </ul>
         <ul class="flex gap-20 items-center"> 
           <li class="text-white"><NuxtLink :to="{ name: 'index' }">Home</NuxtLink></li>
@@ -31,3 +31,26 @@
     <NuxtPage />
   </section>
 </template>
+
+<style>
+  .outfit-200 {
+    font-family: Outfit !important;
+    font-weight: 200 !important;
+  }
+  .outfit-300 {
+    font-family: Outfit !important;
+    font-weight: 300 !important;
+  }
+  .outfit-400 {
+    font-family: Outfit !important;
+    font-weight: 400 !important;
+  }
+  .outfit-500 {
+    font-family: Outfit !important;
+    font-weight: 500 !important;
+  }
+  .outfit-600 {
+    font-family: Outfit !important;
+    font-weight: 600 !important;
+  }
+</style>
