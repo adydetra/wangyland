@@ -5,12 +5,11 @@
 
     <!-- Header -->
     <header class="bg-indigo-600 text-gray-900 py-3 px-4 outfit-400">
-      <div class="container mx-auto flex justify-between">
+      <div class="container mx-auto flex justify-between items-center">
         <p class="d-flex me-4 mb-0">
-          <i class="bi-person custom-icon me-2"></i>
-          <strong class="text-indigo-100 text-xs lg:text-lg">Welcome to Wangyland Website</strong>
+          <strong class="text-indigo-100 text-xs lg:text-lg"><Icon class="mr-3 -mt-1" name="🚀" />Welcome to Wangyland Website</strong>
         </p>
-        <p class="text-indigo-100 font-bold tracking-wide hidden lg:block">IP: WANGYLANDID.ATERNOS.ME</p>
+        <p class="text-indigo-100 font-bold tracking-wide hidden lg:block">IP: WANGYLANDID.ATERNOS.ME<Icon class="ml-2 text-lg leading-none -mt-1" size="26" name="uim:pagelines" /></p>
       </div>
     </header>
 
@@ -22,8 +21,8 @@
           <p class="font-bold text-2xl outfit-600">Wangyland</p>
         </ul>
         <ul class="flex gap-16 items-center outfit-400"> 
-          <li class="text-white hidden md:block"><NuxtLink :to="{ name: 'index' }">Home</NuxtLink></li>
-          <li class="text-white"><NuxtLink :to="{ name: 'guide' }">Guide</NuxtLink></li>
+          <li class="text-white hidden md:block"><NuxtLink :to="{ name: 'index' }"><Icon class="mr-2 text-lg leading-none -mt-1" size="26" name="uim:cube" />Home</NuxtLink></li>
+          <li class="text-white"><NuxtLink :to="{ name: 'guide' }"><Icon class="mr-2 text-lg leading-none -mt-1" size="26" name="uim:horizontal-align-left" />Guide</NuxtLink></li>
         </ul>
       </nav>
     </div>
