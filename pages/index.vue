@@ -11,7 +11,7 @@
             on the Wangyland server.
           </p>
 
-          <p class="text-sm my-3 leading-7 outfit-200">
+          <p class="lg:hidden text-sm my-3 leading-7 outfit-200">
             The Wangyland server is currently hosted in Indonesia. This You can play Adventure, Arena, Discord, Economy, Land Claim, Ranks, SMP, Survival<br>
             on the Wangyland server.
           </p>
