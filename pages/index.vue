@@ -23,7 +23,7 @@
           <p class="my-3 outfit-200">wangylandid.aternos.me | port: 56345</p>
         </div>
         <div class="">
-          <img class="hidden lg:block rounded-2xl" src="/img/1.png" alt="We Confident">
+          <img class="hidden lg:block rounded-2xl" src="/img/1.png" alt="We Confident" />
         </div>
       </div>
     </section>
