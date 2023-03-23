@@ -1,9 +1,9 @@
 <template>
-  <section class="grid grid-cols-4 gap-4 container mx-auto outfit-200">
-    <div class="hidden lg:block">
+  <section class="grid grid-cols-6 gap-4 container mx-auto outfit-200">
+    <div class="hidden lg:block col-span-1">
       <Sidebar />
     </div>
-    <div class="col-span-4 lg:col-span-2 lg:px-12 px-3">
+    <div class="col-span-4 lg:col-span-3 lg:px-12 px-3">
       <h2 id="guide-kit" class="text-6xl outfit-800 border-b pb-8 border-gray-700 mb-4">Land Claim</h2>
 
         <p class="py-2">In essence, "claim" is a square area of land marked with your name on the server, which, by default, other players cannot build, destroy, or loot within.</p>
