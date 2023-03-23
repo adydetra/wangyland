@@ -4,7 +4,7 @@
       <Sidebar />
     </div>
     <div class="col-span-4 lg:col-span-3 lg:px-12 px-3">
-      <h2 id="guide-kit" class="text-6xl outfit-800 border-b pb-8 border-gray-700 mb-4">Land Claim</h2>
+      <h2 id="guide-kit" class="lg:text-6xl text-4xl outfit-800 border-b lg:pb-8 pb-2 lg:mb-4 mb-2 border-gray-700">Land Claim</h2>
 
         <p class="py-2">In essence, "claim" is a square area of land marked with your name on the server, which, by default, other players cannot build, destroy, or loot within.</p>
                                 
