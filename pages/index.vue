@@ -1,10 +1,10 @@
 <template>
 
     <!-- About Section -->
-    <section class="bg-slate-600 h-full">
-      <div class="container mx-auto flex justify-between items-center py-20 px-3 lg:px-0 ">
+    <section class="bg-slate-800">
+      <div class="container mx-auto flex justify-between items-center py-16 px-3 lg:px-0 ">
         <div class="">
-          <h2 class="text-2xl lg:text-4xl outfit-600">About <text class="text-indigo-300">Wangyland</text></h2>
+          <h2 class="text-2xl lg:text-5xl outfit-600">About <text class="text-indigo-300">Wangyland</text></h2>
 
           <p class="hidden lg:block my-3 leading-7 outfit-200">
             The Wangyland server is currently hosted in Indonesia. This You can play<br> Adventure, Arena, Discord, Economy, Land Claim, Ranks, SMP, Survival<br>

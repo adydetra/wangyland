@@ -1,15 +1,15 @@
 <template>
   <!-- Content Section -->
-  <transition name="slide-fade">
-    <section class="min-h-screen bg-slate-800 text-white">
+  <section class="bg-slate-800">
+    <div class="flex flex-col h-screen justify-between text-white">
 
       <Header />
       <Navigation />
 
       <NuxtPage />
-
-    </section>
-  </transition>
+      <Footer />
+    </div>
+  </section>
 </template>
 
 <style>
