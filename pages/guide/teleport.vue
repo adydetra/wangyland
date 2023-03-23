@@ -4,7 +4,7 @@
       <Sidebar />
     </div>
     <div class="col-span-4 lg:col-span-2 lg:px-12 px-3">
-      <h2 id="guide-teleport" class="text-3xl outfit-600">Teleport</h2>
+      <h2 id="guide-kit" class="text-6xl outfit-800 border-b pb-8 border-gray-700 mb-4">Teleport</h2>
         
         <p class="py-2">You can teleport another player on this server.</p>
 

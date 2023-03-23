@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      Outfit: [200, 300, 400, 500, 600],
+      Outfit: [200, 300, 400, 500, 600, 800],
     }
   },
 })

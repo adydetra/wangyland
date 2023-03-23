@@ -4,7 +4,7 @@
       <Sidebar />
     </div>
     <div class="col-span-4 lg:col-span-2 lg:px-12 px-3">
-      <h2 id="guide-warp" class="text-3xl outfit-600">Warp</h2>
+      <h2 id="guide-kit" class="text-6xl outfit-800 border-b pb-8 border-gray-700 mb-4">Warp</h2>
     
         <p class="py-2">Warp is where the admin is set, for example if you need to go to a tutorial then you can type /warp lobby</p>
            

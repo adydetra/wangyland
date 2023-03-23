@@ -36,4 +36,8 @@
     font-family: Outfit !important;
     font-weight: 600;
   }
+  .outfit-800 {
+    font-family: Outfit !important;
+    font-weight: 800;
+  }
 </style>

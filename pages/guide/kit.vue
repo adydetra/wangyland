@@ -4,7 +4,7 @@
       <Sidebar />
     </div>
     <div class="col-span-4 lg:col-span-2 lg:px-12 px-3">
-      <h2 id="guide-kit" class="text-4xl outfit-600">KIT</h2>
+      <h2 id="guide-kit" class="text-6xl outfit-800 border-b pb-8 border-gray-700 mb-4">KIT</h2>
           
         <p class="py-2">Daily Reward, Weekly Reward, and Monthly Reward</p>
                                           
