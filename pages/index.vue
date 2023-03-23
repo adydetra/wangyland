@@ -2,7 +2,7 @@
 
     <!-- About Section -->
     <section class="bg-slate-800">
-      <div class="container mx-auto flex justify-between items-center py-16 px-3 lg:px-0 ">
+      <div class="container mx-auto flex justify-between items-center py-12 px-3 lg:px-0 ">
         <div class="">
           <h2 class="text-3xl lg:text-5xl outfit-600">About <text class="text-indigo-300">Wangyland</text></h2>
 
@@ -21,9 +21,11 @@
 
           <p class="mt-12 outfit-600 text-xl">Server IP for Wangyland</p>
           <p class="my-3 outfit-200">wangylandid.aternos.me | port: 56345</p>
+
+          <img class="border-dashed border lg:hidden p-2 mt-12 border-gray-600" src="/img/1.png" alt="We Confident" />
         </div>
         <div class="">
-          <img class="hidden lg:block rounded-2xl" src="/img/1.png" alt="We Confident" />
+          <img class="hidden lg:block border-dashed border hover:border-double transition duration-1000 ease-in-out hover:border-indigo-400 hover:border-opacity-60 border-gray-600 p-4 rounded-2xl" src="/img/1.png" alt="We Confident" />
         </div>
       </div>
     </section>
