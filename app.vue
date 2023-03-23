@@ -1,13 +1,14 @@
 <template>
   <!-- Content Section -->
+  <transition name="slide-fade">
   <section class="min-h-screen bg-slate-800 text-white">
 
-  <Header />
-  <Navigation />
+    <Header />
+    <Navigation />
 
-  <NuxtPage />
+    <NuxtPage />
 
-  </section>
+  </section></transition>
 </template>
 
 <style>

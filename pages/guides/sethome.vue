@@ -1,9 +1,9 @@
 <template>
   <section class="grid grid-cols-4 gap-4 container mx-auto outfit-200">
-    <div class="">
+    <div class="hidden lg:block">
       <Sidebar />
     </div>
-    <div class="col-span-2 px-12">
+    <div class="col-span-4 lg:col-span-2 lg:px-12 px-3">
       <h2 id="guide-sethome" class="text-3xl outfit-600">Sethome</h2>
 
         <p class="py-2">A simple homes plugin with the ability to create, delete, and teleport to many different homes.</p>
