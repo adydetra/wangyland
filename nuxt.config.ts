@@ -20,5 +20,5 @@ export default defineNuxtConfig({
     families: {
       Outfit: [200, 300, 400, 500, 600],
     }
-  }
+  },
 })

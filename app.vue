@@ -1,22 +1,20 @@
 <template>
   <!-- Content Section -->
   <transition name="slide-fade">
-  <section class="min-h-screen bg-slate-800 text-white">
+    <section class="min-h-screen bg-slate-800 text-white">
 
-    <Header />
-    <Navigation />
+      <Header />
+      <Navigation />
 
-    <NuxtPage />
+      <NuxtPage />
 
-  </section></transition>
+    </section>
+  </transition>
 </template>
 
 <style>
-  .router-link-active {
-    @apply text-gray-50 font-bold;
-  }
   .guides.router-link-active {
-    @apply text-indigo-500 outfit-600;
+    @apply text-indigo-400 border-indigo-400 outfit-600;
   }
   .outfit-200 {
     font-family: Outfit !important;

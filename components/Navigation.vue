@@ -7,8 +7,8 @@
           <p class="font-bold text-2xl outfit-600">Wangyland</p>
         </NuxtLink>
         <ul class="flex gap-16 items-center outfit-400"> 
-          <li class="text-gray-500 hidden md:block"><NuxtLink :to="{ name: 'index' }"><Icon class="mr-2 text-lg leading-none -mt-1" size="26" name="uim:cube" />Home</NuxtLink></li>
-          <li class="text-gray-500 mr-5 lg:mr-0"><NuxtLink to="/guide/kit"><Icon class="mr-2 text-lg leading-none -mt-1" size="26" name="uim:horizontal-align-left" />Guide</NuxtLink></li>
+          <li class="text-gray-50 hidden md:block"><NuxtLink :to="{ name: 'index' }"><Icon class="mr-2 text-lg leading-none -mt-1" size="26" name="uim:cube" />Home</NuxtLink></li>
+          <li class="text-gray-50 mr-5 lg:mr-0"><NuxtLink to="/guide/kit"><Icon class="mr-2 text-lg leading-none -mt-1" size="26" name="uim:horizontal-align-left" />Guide</NuxtLink></li>
         </ul>
       </nav>
     </div>
