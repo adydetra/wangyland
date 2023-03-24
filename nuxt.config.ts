@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     'nuxt-icon'
   ],
-
+  
   googleFonts: {
     families: {
       Outfit: [200, 300, 400, 500, 600, 800],
