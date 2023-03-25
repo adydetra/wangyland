@@ -16,8 +16,13 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
-    'nuxt-icon'
+    'nuxt-icon',
+    'nuxt-headlessui'
   ],
+
+  headlessui: {
+    prefix: 'Headless'
+  },
   
   googleFonts: {
     families: {
