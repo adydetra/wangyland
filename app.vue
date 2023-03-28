@@ -1,11 +1,9 @@
 <template>
-  <!-- Content Section -->
   <section class="bg-slate-800">
     <div class="flex flex-col h-screen justify-between text-white">
-      <Header />
-      <Navigation />
+    <NuxtLayout>
       <NuxtPage />
-      <Footer />
+    </NuxtLayout>
     </div>
   </section>
 </template>
