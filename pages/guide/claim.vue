@@ -51,7 +51,8 @@
         <p class="py-4">
           if you still don't understand this claim tutorial, you can see this video
           <br>
-          <a href="https://www.youtube.com/shorts/n_9NyKTCcW4">- Link video 1</a><br><a href="https://www.youtube.com/watch?v=No6d40_rLrg">- Link video 2</a>
+          <NuxtLink to="https://www.youtube.com/shorts/n_9NyKTCcW4" class="text-blue-400 hover:text-blue-300">- Link video 1</NuxtLink><br>
+          <NuxtLink to="https://www.youtube.com/watch?v=No6d40_rLrg" class="text-blue-400 hover:text-blue-300">- Link video 2</NuxtLink>
         </p>
     </div>
   </section>
