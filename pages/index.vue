@@ -1,7 +1,6 @@
 <template>
-
     <!-- About Section -->
-    <section class="bg-slate-800">
+    <section class="bg-slate-800 select-none">
       <div class="container mx-auto flex justify-between items-center py-12 px-3 lg:px-0 ">
         <div class="">
           <h2 class="text-3xl lg:text-5xl outfit-600">About <text class="text-indigo-300">Wangyland</text></h2>
@@ -29,5 +28,4 @@
         </div>
       </div>
     </section>
-
 </template>
