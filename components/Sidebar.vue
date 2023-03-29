@@ -1,6 +1,6 @@
 <template>
   <div class="hidden lg:flex flex-col mb-6">
-    <h2 class="outfit-600 text-md py-3"><Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:play-16" />Getting Started</h2>
+    <h2 class="outfit-600 text-md py-3"><Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:play-16"/>Getting Started</h2>
     <NuxtLink to="/guide/introduce" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 border-l guides">Introduce</NuxtLink>
     <NuxtLink to="/guide/usage" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 border-l guides">Usage</NuxtLink>
   </div>
@@ -41,12 +41,12 @@
     ListboxOption,
   } from '@headlessui/vue'
 
-const people = [
-  { id: 1, name: 'KIT', to: '/guide/kit', unavailable: false},
-  { id: 2, name: 'Warp', to: '/guide/warp', unavailable: false},
-  { id: 3, name: 'Land Claim', to: '/guide/claim', unavailable: false},
-  { id: 4, name: 'Sethome', to: '/guide/sethome', unavailable: false},
-  { id: 5, name: 'Teleport', to: '/guide/teleport', unavailable: false},
-  { id: 6, name: 'Other', to: '/guide/other', unavailable: false},
-]
+  const people = [
+    { id: 1, name: 'KIT', to: '/guide/kit', unavailable: false},
+    { id: 2, name: 'Warp', to: '/guide/warp', unavailable: false},
+    { id: 3, name: 'Land Claim', to: '/guide/claim', unavailable: false},
+    { id: 4, name: 'Sethome', to: '/guide/sethome', unavailable: false},
+    { id: 5, name: 'Teleport', to: '/guide/teleport', unavailable: false},
+    { id: 6, name: 'Other', to: '/guide/other', unavailable: false},
+  ]
 </script>
