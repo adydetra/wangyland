@@ -25,7 +25,7 @@
           <img class="border-dashed border lg:hidden p-2 mt-12 border-gray-600" src="/img/1.png" alt="We Confident" />
         </div>
         <div class="">
-          <img class="hidden lg:block border-dashed border hover:border-double transition duration-1000 ease-in-out backdrop-blur-sm bg-white/5 hover:bg-indigo-300/20 hover:border-indigo-400 hover:border-opacity-60 border-gray-600 p-4 rounded-2xl" src="/img/1.png" alt="We Confident" />
+          <img class="hidden lg:block border-dashed border hover:border-double transition duration-500 ease-in-out backdrop-blur-sm bg-white/5 hover:bg-indigo-300/20 hover:border-indigo-400 hover:border-opacity-60 border-indigo-400 p-4 rounded-2xl" src="/img/1.png" alt="We Confident" />
         </div>
       </div>
     </section>
