@@ -16,8 +16,8 @@
 
   <div class="lg:hidden py-2">
     <Listbox v-model="selectedGetting" v-slot="{ open }">
-      <ListboxButton class="outfit-600 text-md py-3"><Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:play-16"/>Getting Started</ListboxButton>
-      <div v-show="open">
+      <ListboxButton class="outfit-600 text-md py-3"><Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:play-16" />Getting Started</ListboxButton>
+      <div>
         <ListboxOptions static>
           <ListboxOption
             v-for="getting in started"
