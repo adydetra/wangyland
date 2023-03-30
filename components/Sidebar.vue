@@ -1,11 +1,21 @@
 <template>
   <div class="hidden lg:flex flex-col mb-6">
-    <h2 class="outfit-600 text-md py-3"><Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:play-16"/>Getting Started</h2>
+    <div class="flex justify-between items-center">
+      <h2 class="outfit-600 text-md py-3">
+        <Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:play-16"/>Getting Started
+      </h2>
+      <Icon size="16" name="mdi:transit-connection"/>
+    </div>
     <NuxtLink to="/guide/introduce" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 border-l guides">Introduce</NuxtLink>
     <NuxtLink to="/guide/usage" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 border-l guides">Usage</NuxtLink>
   </div>
   <div class="hidden lg:flex flex-col mb-6">
-    <h2 class="outfit-600 text-md py-3"><Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:cpu-16" />Plugins</h2>
+    <div class="flex justify-between items-center">
+      <h2 class="outfit-600 text-md py-3">
+        <Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:cpu-16" />Plugins
+      </h2>
+      <Icon size="16" name="mdi:transit-connection"/>
+    </div>
     <NuxtLink to="/guide/kit" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 border-l guides">KIT</NuxtLink>
     <NuxtLink to="/guide/warp" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 border-l guides">Warp</NuxtLink>
     <NuxtLink to="/guide/claim" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 border-l guides">Land Claim</NuxtLink>
@@ -16,7 +26,12 @@
 
   <div class="lg:hidden py-2">
     <Listbox v-model="selectedGetting" v-slot="{ open }">
-      <ListboxButton class="outfit-600 text-md py-3"><Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:play-16" />Getting Started</ListboxButton>
+      <ListboxButton class="outfit-600 text-md py-3 flex justify-between items-center w-full">
+        <div>
+          <Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:play-16" />Getting Started
+        </div>
+        <Icon size="16" name="mdi:transit-connection"/>
+      </ListboxButton>
       <div>
         <ListboxOptions static>
           <ListboxOption
@@ -25,7 +40,7 @@
             :value="getting"
             :disabled="getting.unavailable"
           >
-          <NuxtLink :to="getting.to" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 flex border-l guides"> {{ getting.name }} </NuxtLink>
+            <NuxtLink :to="getting.to" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 flex border-l guides"> {{ getting.name }} </NuxtLink>
           </ListboxOption>
         </ListboxOptions>
       </div>
@@ -34,7 +49,12 @@
 
   <div class="lg:hidden py-2">
     <Listbox v-model="selectedPlugin" v-slot="{ open }">
-      <ListboxButton class="outfit-600 text-md py-3"><Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:cpu-16" />Plugins</ListboxButton>
+      <ListboxButton class="outfit-600 text-md py-3 flex justify-between items-center w-full">
+        <div>
+          <Icon class="mr-2 leading-none -mt-1" size="16" name="octicon:cpu-16" />Plugins
+        </div>
+        <Icon size="16" name="mdi:transit-connection"/>
+      </ListboxButton>
       <div v-show="open">
         <ListboxOptions static>
           <ListboxOption
@@ -43,7 +63,7 @@
             :value="plugin"
             :disabled="plugin.unavailable"
           >
-          <NuxtLink :to="plugin.to" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 flex border-l guides"> {{ plugin.name }} </NuxtLink>
+            <NuxtLink :to="plugin.to" class="hover:bg-slate-700 text-sm outfit-200 py-3 pl-3 ml-2 bg-slate-800 border-gray-700 flex border-l guides"> {{ plugin.name }} </NuxtLink>
           </ListboxOption>
         </ListboxOptions>
       </div>
