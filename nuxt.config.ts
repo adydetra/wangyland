@@ -32,10 +32,12 @@ export default defineNuxtConfig({
   },
 
   pwa: {
+    registerType: 'autoUpdate',
     manifest: {
       name: "Wangyland",
       short_name: "Wangyland",
       theme_color: '#818cf8',
+      background_color: '#818cf8',
       icons: [
         {
           src: 'pwa/icon_64x64.png',
@@ -61,6 +63,7 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
     },
     client: {
       installPrompt: true,
