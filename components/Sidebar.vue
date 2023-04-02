@@ -32,7 +32,8 @@
         </div>
         <Icon size="16" name="mdi:transit-connection"/>
       </ListboxButton>
-      <div>
+      <div
+      >
         <ListboxOptions static>
           <ListboxOption
             v-for="getting in started"
