@@ -65,10 +65,6 @@ export default defineNuxtConfig({
       navigateFallback: '/',
       globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
     },
-    client: {
-      installPrompt: true,
-      periodicSyncForUpdates: 20,
-    },
     devOptions: {
       enabled: true,
       type: 'module',
