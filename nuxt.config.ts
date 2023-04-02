@@ -33,9 +33,9 @@ export default defineNuxtConfig({
 
   pwa: {
     manifest: {
-      name: "Wangyland PWA",
-      short_name: "Wangyland PWA",
-      description: "Wangyland Website",
+      name: "Wangyland",
+      short_name: "Wangyland",
+      theme_color: '#818cf8',
       icons: [
         {
           src: 'pwa/icon_64x64.png',
