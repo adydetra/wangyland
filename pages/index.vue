@@ -1,6 +1,6 @@
 <template>
     <!-- About Section -->
-    <section class="bg-slate-800 select-none grid grid-cols-6 container mx-auto py-12 px-3 lg:px-0">
+    <section class="bg-slate-800 select-none grid grid-cols-6 container mx-auto py-12 px-4 lg:px-0">
         <div class="col-span-6 lg:col-span-3 2xl:col-span-2 flex items-center">
           <div class="">
             <h2 class="text-3xl lg:text-5xl outfit-600">About <text class="text-indigo-300">Wangyland</text></h2>
