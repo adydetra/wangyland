@@ -4,13 +4,16 @@
         <p class="pt-2 outfit-600 text-xl">Wangyland</p>
   
         <p class="mt-3 leading-8">  
-          Welcome to our minecraft server where you can start your own survival journey with us. In here, you can join our nice SMP Community to play together and thrive. We are happy to have new members join us and be part of our server. 
+          Welcome to our minecraft server where you can start your own survival journey with us. In here, you can join our nice SMP Community to play together and thrive. 
+          We are happy to have new members join us and be part of our server. 
         </p>
 
         <p class="pb-2 mt-8 outfit-600 text-xl">Why join our Server?</p>
 
         <p class="mt-3 leading-8">
-          Our server is a Survival Multiplayer Server, so you can only play survival Minecraft. But there is still many things you can do that are beyond just a normal survival gameplay. You can make shops and trade your valuable items, make farm to get money, and battle toe to toe with any other player in our arena. We also allow player to sell or buy/rent claim lands or buildings, to make or be part of a town, including our own.
+          Our server is a Survival Multiplayer Server, so you can only play survival Minecraft. But there is still many things you can do that are beyond just a normal survival gameplay. 
+          You can make shops and trade your valuable items, make farm to get money, and battle toe to toe with any other player in our arena. 
+          We also allow player to sell or buy/rent claim lands or buildings, to make or be part of a town, including our own.
         </p>
 
         <p class="mt-3 leading-8">
