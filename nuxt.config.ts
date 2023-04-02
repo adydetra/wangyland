@@ -32,7 +32,6 @@ export default defineNuxtConfig({
   },
 
   pwa: {
-    registerType: 'autoUpdate',
     manifest: {
       name: "Wangyland",
       short_name: "Wangyland",
@@ -71,5 +70,5 @@ export default defineNuxtConfig({
       enabled: true,
       type: 'module',
     },
-  },
+  }
 })
