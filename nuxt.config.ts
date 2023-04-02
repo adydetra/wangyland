@@ -32,8 +32,9 @@ export default defineNuxtConfig({
   },
 
   pwa: {
+    registerType: 'autoUpdate',
     manifest: {
-      name: "Wangyland PWA",
+      name: "Wangyland",
       short_name: "Wangyland",
       theme_color: '#818cf8',
       icons: [
@@ -70,5 +71,5 @@ export default defineNuxtConfig({
       enabled: true,
       type: 'module',
     },
-  }
+  },
 })

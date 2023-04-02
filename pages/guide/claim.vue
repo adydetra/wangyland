@@ -6,7 +6,7 @@
         <p class="py-4 outfit-500">HOW TO CLAIM?</p>
 
         <p class="py-2">
-          1. Hold out your golden shovel in your Main Hand and Right-Click on the ground where you want the first corner of your claim to be.<br/>
+          1. Hold out your golden shovel in your Main Hand and Right-Click on the ground where you want the first corner of your claim to be.<br/><br/>
           2. While continuing to hold the Golden Shovel in your hand, walk over to the spot you want the second corner of your claim and Right Click it. Note that claims have to be over 100 square blocks in size. (10x10+ or equivalent)
         </p>
     
