@@ -37,7 +37,7 @@ export default defineNuxtConfig({
       name: "Wangyland",
       short_name: "Wangyland",
       theme_color: '#818cf8',
-      background_color: '#818cf8',
+      background_color: '#ffffff',
       icons: [
         {
           src: 'pwa/icon_64x64.png',
