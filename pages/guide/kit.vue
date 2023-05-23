@@ -9,6 +9,6 @@
           
         <p class="py-4">
           <strong>Pictures</strong><br/>
-          <img src="/img/guide/kit-1.png" alt="pict" class="mt-2 max-w-xs">
+          <img src="/img/guide/kit-1.webp" alt="pict" class="mt-2 max-w-xs">
         </p>
 </template>

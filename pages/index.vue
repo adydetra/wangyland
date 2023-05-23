@@ -21,7 +21,7 @@
             <p class="mt-12 outfit-600 text-xl">Server IP for Wangyland</p>
             <p class="my-3 outfit-200">wangylandid.aternos.me | port: 56345</p>
 
-            <img class="border-dashed border lg:hidden p-2 mt-12 border-gray-600" src="/img/1.png" alt="We Confident" />
+            <img class="border-dashed border lg:hidden p-2 mt-12 border-gray-600" src="/img/1.webp" alt="We Confident" />
           </div>
         </div>
         <div class="lg:col-span-3 2xl:col-span-4 flex justify-end">
