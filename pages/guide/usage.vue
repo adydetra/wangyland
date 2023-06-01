@@ -18,7 +18,7 @@
   
         <p class="mt-3 leading-8">  
           1. Open your minecraft launcher<br/>
-          2. Select version 1.19.3 Release<br/>
+          2. Select version 1.19.4 Release<br/>
           3. Copy this IP Server > wangylandid.aternos.me<br/>
           4. Play
         </p>
