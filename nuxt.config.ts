@@ -2,6 +2,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Wangyland',
+      htmlAttrs: {
+        lang: "en",
+      },
       bodyAttrs: {
         class: 'bg-slate-800'
       },
