@@ -1,5 +1,5 @@
 <template>
-  <section class="px-4 lg:px-0 border-y border-slate-900 mt-auto text-gray-400 outfit-300 tracking-wide">
+  <section class="px-4 lg:px-0 border-y border-slate-900 mt-auto text-gray-400 font-light tracking-wide">
     <div class="container mx-auto py-12 flex justify-between">
       <div>
         <NuxtLink to="https://adityawarman.vercel.app/" target="_blank" class="text-sm hover:text-indigo-300"

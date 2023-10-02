@@ -1,10 +1,15 @@
 <template>
-  <section class="grid grid-cols-6 gap-4 container mx-auto outfit-200">
-    <div class="lg:col-span-1 col-span-6 px-4 lg:px-0">
-      <Sidebar />
-    </div>
-    <div class="col-span-6 lg:col-span-3 lg:px-12 px-4 pb-12">
+  <main class="bg-gray-900 text-white min-h-screen">
+    <Header />
+    <Navigation />
+    <section class="container mx-auto">
       <slot />
-    </div>
-  </section>
+    </section>
+    <Footer />
+  </main>
 </template>
+
+<script setup lang="ts">
+const route = useRoute();
+const home = route.path === '/';
+</script>
