@@ -28,8 +28,7 @@ export default defineNuxtConfig({
     documentDriven: true,
     highlight: {
       theme: {
-        default: "monokai",
-        dark: "github-dark",
+        default: "github-dark",
       },
     },
   },
