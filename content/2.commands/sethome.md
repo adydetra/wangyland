@@ -9,8 +9,6 @@ A simple homes plugin with the ability to create, delete, and teleport to many d
 
 ## Commands
 
-3 Type to trust player
-
 ```bash
 /sethome name
 /delhome name
