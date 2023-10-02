@@ -8,6 +8,7 @@
   <p class="leading-8">
     /warp lobby<br />
     /warp spawn<br />
-    /warp crates
+    /warp crates<br />
+    /warp resource
   </p>
 </template>

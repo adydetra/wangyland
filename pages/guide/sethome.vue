@@ -13,7 +13,7 @@
   <p class="pt-8 outfit-600 text-md">NOTE</p>
 
   <p class="leading-8 mt-2">
-    - Max 3 for rank [Member]<br />
-    - Max 5 for rank [Co-Chief]
+    - Max 5 for rank [Member]<br />
+    - Max 10 for rank [Co-Chief]
   </p>
 </template>

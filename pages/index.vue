@@ -13,7 +13,7 @@
           on the Wangyland server.
         </p>
         <p class="mt-12 outfit-600 text-xl">Minecraft game version does Wangyland server</p>
-        <p class="my-3 outfit-200">Wangyland supports Minecraft version: 1.19.4</p>
+        <p class="my-3 outfit-200">Wangyland supports Minecraft version: 1.20</p>
         <p class="mt-12 outfit-600 text-xl">Server IP for Wangyland</p>
         <p class="my-3 outfit-200">wangylandid.aternos.me | port: 56345</p>
         <img class="object-cover border-dashed border lg:hidden p-2 mt-12 border-gray-600" src="/img/1.png" alt="We Confident" />
