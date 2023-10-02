@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/image", "@nuxt/content", "nuxt-icon", "nuxt-headlessui", "@vite-pwa/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/image", "@nuxt/content", "nuxt-icon", "nuxt-headlessui"],
 
   devtools: { enabled: false },
 
@@ -49,45 +49,5 @@ export default defineNuxtConfig({
     display: "swap",
     prefetch: true,
     preconnect: true,
-  },
-
-  pwa: {
-    registerType: "autoUpdate",
-    manifest: {
-      name: "Wangyland",
-      short_name: "Wangyland",
-      theme_color: "#818cf8",
-      background_color: "#ffffff",
-      icons: [
-        {
-          src: "pwa/icon_64x64.png",
-          sizes: "64x64",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_144x144.png",
-          sizes: "144x144",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_192x192.png",
-          sizes: "192x192",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_512x512.png",
-          sizes: "512x512",
-          type: "image/png",
-        },
-      ],
-    },
-    workbox: {
-      navigateFallback: "/",
-      globPatterns: ["**/*.{js,css,html,png,svg,ico,webp}"],
-    },
-    devOptions: {
-      enabled: true,
-      type: "module",
-    },
   },
 });
