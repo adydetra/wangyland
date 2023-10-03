@@ -5,13 +5,10 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
-      bodyAttrs: {
-        class: "bg-slate-800",
-      },
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: "Welcome to Wangyland Website" },
+        { hid: "description", name: "description", content: "Minecraft server hosted on Aternos, supporting Minecraft Java, Bedrock, and Pocket Edition, enabling cross-platform play." },
       ],
     },
   },
