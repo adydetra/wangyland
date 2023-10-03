@@ -1,0 +1,14 @@
+---
+title: Backpack
+description: Allows players to have backpacks that provide them with extra inventory space.
+---
+
+# Backpack
+
+Allows players to have backpacks that provide them with extra inventory space.
+
+## Commands
+
+```bash
+/backpack
+```
