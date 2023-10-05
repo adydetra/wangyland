@@ -1,18 +1,42 @@
 ---
 title: Warp
-description: Warp is where the admin is set, for example if you need to go to a tutorial then you can type /warp lobby
+description: Warp command allows you to teleport to several places authorized by the server admin. For example, if you want to go to the pvp, you can type /warp pvp.
 ---
 
 # Warp
 
-Warp is where the admin is set, for example if you need to go to a tutorial then you can type /warp lobby
+Warp command allows you to teleport to several places authorized by the server admin. 
+
+For example, if you want to go to the pvp, you can type /warp pvp.
 
 ## Commands
 
+Join epic battles
+
+```bash
+/warp pvp
+```
+
+Mine and collect materials
+
+```bash
+/warp resource
+```
+
+First location when you log in
+
 ```bash
 /warp lobby
+```
+
+Starting point in survival world
+
+```bash
 /warp spawn
+```
+
+Experience exciting gacha for valuable items
+
+```bash
 /warp crates
-/warp pvp
-/warp resource
 ```
