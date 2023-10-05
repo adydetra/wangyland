@@ -9,9 +9,28 @@ A simple homes plugin with the ability to create, delete, and teleport to many d
 
 ## Commands
 
+Create
+
 ```bash
 /sethome name
+```
+
+Delete
+
+```bash
 /delhome name
+```
+
+Teleport to your home
+
+```bash
+/home name
+```
+
+Show all your saved homes (list)
+
+```bash
+/home
 ```
 
 ## Note
