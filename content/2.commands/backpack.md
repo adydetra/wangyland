@@ -10,5 +10,9 @@ Allows players to have backpacks that provide them with extra inventory space.
 ## Commands
 
 ```bash
-/backpack
+/backpack 
+
+#or 
+
+/bp
 ```
