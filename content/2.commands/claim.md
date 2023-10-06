@@ -16,34 +16,55 @@ Claimlist will increase as you play, the longer you play, the more the claim lis
 
 ## Commands
 
+Remove claim
+
+```bash
+/abandonclaim #one
+/abandonallclaim #all
+```
+
+Showing claim list
+
+```bash
+/claimlist
+```
+
+### Example pictures
+
+![](/img/guide/land-claim-1.png)
+
+### Example videos
+
+- [Video](https://www.youtube.com/shorts/-HGflP3kFDY){style="color: rgb(96 165 250);"}
+- [Search](https://www.youtube.com/results?search_query=minecraft+how+to+claim+with+golden+shovel){style="color: rgb(96 165 250);"}
+
+---
+
+### Trust
+
 3 Type to trust player
 
 ```bash
 /trust name_player
-/accesstrust name_player
-/containertrust name_player
+/accesstrust name_player #only buttons, levers, and beds.
+/containertrust name_player #only buttons, levers, beds, crafting gear, containers, and animals.
+```
+
+Showing trust list
+
+```bash
+/trustlist
 ```
 
 Untrust player
 
 ```bash
-/untrust name_player
+/untrust name_player #one
+/untrust all #all
 ```
 
-Remove your claim
+Grants a player permission to share his permission level with others.
 
 ```bash
-/abandonclaim
-/abandonallclaim
+/permissiontrust name_player
 ```
-
-Showing your claimlist
-
-```bash
-/claimlist
-/trustlist
-```
-
-### Example Pictures
-
-![](/img/guide/land-claim-1.png)
