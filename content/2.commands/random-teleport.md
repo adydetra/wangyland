@@ -1,9 +1,9 @@
 ---
-title: RTP
+title: Random Teleport
 description: Random Teleport feature allows the server owner to forcefully teleport players to a random location in a world.
 ---
 
-# Warp
+# Random Teleport
 
 Random Teleport feature allows the server owner to forcefully teleport players to a random location in a world.
 
