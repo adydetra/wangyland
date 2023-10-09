@@ -18,6 +18,8 @@
           </ContentList>
         </DisclosurePanel>
       </Disclosure>
+      <hr class="!my-8 border-gray-800" />
+      <NuxtLink to="/changelog" class="flex items-center text-sm hover:text-blue-300" :class="{ '!text-blue-400 font-semibold': route.path === '/changelog' }"><Icon class="mr-2" size="16" name="pajamas:log" />Changelog</NuxtLink>
     </div>
   </aside>
 </template>
