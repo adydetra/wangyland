@@ -1,12 +1,12 @@
 <template>
-  <section class="relative">
-    <div class="py-8 lg:px-4 lg:-mx-4 space-y-8 text-sm hidden lg:block lg:sticky top-20">
+  <section class="relative select-none">
+    <div class="py-8 lg:px-4 lg:-mx-4 space-y-8 text-sm hidden lg:block lg:sticky top-0 min-h-screen overflow-y-auto">
       <!-- TOC -->
       <div class="space-y-4">
         <p class="text-gray-300 font-bold">Table of Contents</p>
         <ul v-if="toc && toc.links" class="space-y-3">
           <li v-for="link in toc.links" :key="link.text">
-            <NuxtLink :to="`#${link.id}`" class="block text-gray-400 truncate">
+            <NuxtLink :to="`#${link.id}`" class="block truncate" :class="color">
               {{ link.text }}
             </NuxtLink>
           </li>
@@ -20,7 +20,7 @@
         <p class="text-gray-300 font-bold">Community</p>
         <ul class="space-y-3">
           <li v-for="community in communitys" :key="community.to">
-            <NuxtLink :to="community.to" target="_blank" class="flex items-center text-gray-400 gap-2"> <Icon class="w-4 h-4" :name="community.icon" />{{ community.text }} </NuxtLink>
+            <NuxtLink :to="community.to" target="_blank" class="flex items-center gap-2" :class="color"> <Icon class="w-4 h-4" :name="community.icon" />{{ community.text }} </NuxtLink>
           </li>
         </ul>
       </div>
@@ -30,6 +30,7 @@
 
 <script setup lang="ts">
 const { toc } = useContent();
+const color = "text-gray-400 hover:text-blue-400"
 
 const communitys = [
   { to: "https://github.com/adydetra/wangyland", icon: "ph:shooting-star-bold", text: "Star on GitHub" },
