@@ -10,8 +10,8 @@
           <NuxtLink
             to="/"
             :class="{
-              'text-indigo-300': route.path === '/',
-              'text-gray-50 hover:text-indigo-300': route.path !== '/',
+              'text-blue-400': route.path === '/',
+              'text-gray-50 hover:text-blue-400': route.path !== '/',
             }"
           >
             <Icon :class="icon" size="26" name="uim:cube" />
@@ -22,8 +22,8 @@
           <NuxtLink
             to="/get-started/introduction"
             :class="{
-              'text-indigo-300': route.path !== '/',
-              'text-gray-50 hover:text-indigo-300': route.path === '/',
+              'text-blue-400': route.path !== '/',
+              'text-gray-50 hover:text-blue-400': route.path === '/',
             }"
           >
             <Icon :class="icon" size="26" name="uim:horizontal-align-left" />
