@@ -26,6 +26,8 @@ onMounted(() => {
     currentCategory.value = "Get Started";
   } else if (unwatch === "commands") {
     currentCategory.value = "Commands";
+  } else if (unwatch === "changelog") {
+    currentCategory.value = "Changelog";
   } else {
     currentCategory.value = null;
   }
