@@ -6,7 +6,7 @@
         <p class="text-gray-300 font-bold">Table of Contents</p>
         <ul v-if="toc && toc.links" class="space-y-3">
           <li v-for="link in toc.links" :key="link.text">
-            <NuxtLink :to="`#${link.id}`" class="block truncate" :class="color">
+            <NuxtLink :to="`#${link.id}`" class="block truncate" :class="color" :aria-label="link.text">
               {{ link.text }}
             </NuxtLink>
           </li>
@@ -20,7 +20,9 @@
         <p class="text-gray-300 font-bold">Community</p>
         <ul class="space-y-3">
           <li v-for="community in communitys" :key="community.to">
-            <NuxtLink :to="community.to" target="_blank" class="flex items-center gap-2" :class="color"> <Icon class="w-4 h-4" :name="community.icon" />{{ community.text }} </NuxtLink>
+            <NuxtLink :to="community.to" target="_blank" class="flex items-center gap-2" :class="color" :aria-label="community.text">
+              <Icon class="w-4 h-4" :name="community.icon" />{{ community.text }}
+            </NuxtLink>
           </li>
         </ul>
       </div>
@@ -30,7 +32,7 @@
 
 <script setup lang="ts">
 const { toc } = useContent();
-const color = "text-gray-400 hover:text-blue-400"
+const color = "text-gray-400 hover:text-blue-400";
 
 const communitys = [
   { to: "https://github.com/adydetra/wangyland", icon: "ph:shooting-star-bold", text: "Star on GitHub" },

@@ -13,6 +13,7 @@
               'text-blue-400': route.path === '/',
               'text-gray-50 hover:text-blue-400': route.path !== '/',
             }"
+            aria-label="Home"
           >
             <Icon :class="icon" size="26" name="uim:cube" />
             Home
@@ -25,6 +26,7 @@
               'text-blue-400': route.path !== '/',
               'text-gray-50 hover:text-blue-400': route.path === '/',
             }"
+            aria-label="Guide"
           >
             <Icon :class="icon" size="26" name="uim:horizontal-align-left" />
             Guide

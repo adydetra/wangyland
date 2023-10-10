@@ -10,7 +10,12 @@
           <ContentList :path="`/${category.toLowerCase().replace(' ', '-')}`" v-slot="{ list }">
             <ul class="pl-2" v-for="content in list" :key="content._path">
               <li class="border-l border-gray-700 hover:border-blue-400 pl-4 py-2" :class="{ '!border-blue-400': isPageActive(content._path) }">
-                <NuxtLink :to="content._path" class="text-gray-400 hover:text-blue-300" :class="{ '!text-blue-400 font-semibold': isPageActive(content._path) }">
+                <NuxtLink
+                  :to="content._path"
+                  class="text-gray-400 hover:text-blue-300"
+                  :class="{ '!text-blue-400 font-semibold': isPageActive(content._path) }"
+                  :aria-label="content.title"
+                >
                   {{ content.title }}
                 </NuxtLink>
               </li>
@@ -19,7 +24,13 @@
         </DisclosurePanel>
       </Disclosure>
       <hr class="!my-8 border-gray-800" />
-      <NuxtLink to="/changelog" class="flex items-center text-sm hover:text-blue-300" :class="{ '!text-blue-400 font-semibold': route.path === '/changelog' }"><Icon class="mr-2" size="16" name="pajamas:log" />Changelog</NuxtLink>
+      <NuxtLink
+        to="/changelog"
+        class="flex items-center text-sm hover:text-blue-300"
+        :class="{ '!text-blue-400 font-semibold': route.path === '/changelog' }"
+        aria-label="Read Changelog"
+        ><Icon class="mr-2" size="16" name="pajamas:log" />Changelog</NuxtLink
+      >
     </div>
   </aside>
 </template>

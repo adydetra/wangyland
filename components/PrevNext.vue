@@ -1,7 +1,11 @@
 <template>
   <div class="grid grid-cols-4 gap-8 border-t border-gray-800 pt-8">
-    <NuxtLink v-if="prev" :to="prev._path" :class="styling" class="justify-start"><Icon name="iconamoon:player-previous" :class="icon" /> {{ prev.title }}</NuxtLink>
-    <NuxtLink v-if="next" :to="next._path" :class="styling" class="justify-end">{{ next.title }} <Icon name="iconamoon:player-next" :class="icon" /></NuxtLink>
+    <NuxtLink v-if="prev" :to="prev._path" :class="styling" class="justify-start" :aria-label="prev.title"
+      ><Icon name="iconamoon:player-previous" :class="icon" /> {{ prev.title }}</NuxtLink
+    >
+    <NuxtLink v-if="next" :to="next._path" :class="styling" class="justify-end" :aria-label="next.title"
+      >{{ next.title }} <Icon name="iconamoon:player-next" :class="icon"
+    /></NuxtLink>
   </div>
 </template>
 
