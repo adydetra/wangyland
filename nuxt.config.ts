@@ -1,15 +1,11 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Wangyland",
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       htmlAttrs: {
         lang: "en",
       },
-      meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: "Minecraft server hosted on Aternos, supporting Minecraft Java, Bedrock, and Pocket Edition, enabling cross-platform play." },
-      ],
     },
   },
 

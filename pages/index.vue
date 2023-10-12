@@ -31,3 +31,10 @@
     </section>
   </NuxtLayout>
 </template>
+
+<script setup lang="ts">
+useHead({
+  title: 'Wangyland',
+  titleTemplate: 'Wangyland',
+})
+</script>
