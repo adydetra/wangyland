@@ -28,6 +28,8 @@ onMounted(() => {
     currentCategory.value = "Commands";
   } else if (unwatch === "advanced") {
     currentCategory.value = "Advanced";
+  } else if (unwatch === "aternos-access") {
+    currentCategory.value = "Aternos Access";
   } else if (unwatch === "changelog") {
     currentCategory.value = "Changelog";
   } else {

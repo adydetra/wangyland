@@ -25,12 +25,16 @@
       </Disclosure>
       <hr class="!my-8 border-gray-800" />
       <NuxtLink
-        to="/changelog"
-        class="flex items-center text-sm hover:text-blue-300"
-        :class="{ '!text-blue-400 font-semibold': route.path === '/changelog' }"
-        aria-label="Read Changelog"
-        ><Icon class="mr-2" size="16" name="pajamas:log" />Changelog</NuxtLink
+        v-for="link in links"
+        :key="link.to"
+        :to="link.to"
+        class="flex items-cender text-sm hover:text-blue-300"
+        :class="{ '!text-blue-400 font-semibold': route.path === link.to }"
+        :aria-label="`Read ${link.label}`"
       >
+        <Icon class="mr-2" size="16" :name="link.icon" />
+        {{ link.label }}
+      </NuxtLink>
     </div>
   </aside>
 </template>
@@ -39,6 +43,10 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 
 const route = useRoute();
+const links = computed(() => [
+  { to: "/aternos-access", label: "Aternos Access", icon: "mdi:minecraft" },
+  { to: "/changelog", label: "Changelog", icon: "pajamas:log" },
+]);
 const isPageActive = (path: string | undefined) => {
   return path && route.path === path;
 };
