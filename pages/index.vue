@@ -25,7 +25,6 @@
           class="object-cover p-4 rounded-2xl hidden lg:block border-dashed border hover:border-double transition duration-500 ease-in-out backdrop-blur-sm bg-white/5 hover:bg-indigo-300/20 hover:border-indigo-400 hover:border-opacity-60 border-indigo-400"
           src="/img/1.png"
           alt="We Confident"
-          placeholder="/img/1.png"
         />
       </div>
     </section>
