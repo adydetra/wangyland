@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full bg-gradient-to-r from-slate-900 via-blue-950 to-black">
+  <div class="w-full h-full" style="background: radial-gradient(circle, rgba(15,23,42,1) 0%, rgba(23,37,84,1) 0%, rgba(0,0,0,1) 100%);">
     <svg class="absolute inset-0 opacity-40" style="z-index: 0" width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M165.165 460.097C665.045 774.444 932.717 309.581 918.141 89.1189C903.565 -131.34 701.988 54.0219 229.207 -264.678C-5.12998 -422.28 -543.751 -34.9957 -529.152 185.807C-519.833 326.75 -379.035 310.245 -189.346 337.462C-81.376 352.603 41.2774 380.199 165.165 460.097Z"
