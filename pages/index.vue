@@ -17,7 +17,7 @@
           <p class="my-3 font-extralight">Wangyland supports Minecraft version: 1.20</p>
           <p class="mt-12 font-semibold text-xl">Server IP for Wangyland</p>
           <p class="my-3 font-extralight">wangylandid.aternos.me | port: 56345</p>
-          <NuxtImg class="object-cover border-dashed border lg:hidden p-2 mt-12 border-gray-600" src="/img/1.png" alt="We Confident" placeholder="/img/1.png"/>
+          <NuxtImg class="object-cover border-dashed border lg:hidden p-2 mt-12 border-gray-600" src="/img/1.png" alt="We Confident" placeholder="/img/1.png" />
         </div>
       </div>
       <div class="lg:col-span-4 flex justify-end">
@@ -33,7 +33,7 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'Wangyland',
-  titleTemplate: 'Wangyland',
-})
+  title: "Wangyland",
+  titleTemplate: "Wangyland",
+});
 </script>
