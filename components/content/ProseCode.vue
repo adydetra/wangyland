@@ -4,7 +4,7 @@
       {{ filename }}
     </span> -->
     <slot />
-    <CopyCode :show="hovered" :content="code" class="absolute bottom-9 end-4 opacity-0 group-hover:opacity-100" />
+    <CopyCode :show="hovered" :content="code" class="absolute bottom-9 end-4 lg:opacity-0 group-hover:opacity-100" />
   </div>
 </template>
 
