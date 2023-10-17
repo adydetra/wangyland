@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 const content =
-  "!max-w-[96%] col-span-11 lg:col-span-7 p-8 lg:px-16 space-y-4 prose text-gray-400 prose-heading:no-underline prose-headings:text-white prose-a:text-white prose-a:no-underline prose-hr:border-gray-800 prose-strong:text-white prose-strong:font-normal prose-strong:bg-gray-800 prose-strong:py-1 prose-strong:px-2 prose-strong:rounded-lg";
+  "!max-w-[96%] col-span-11 lg:col-span-7 p-8 lg:px-16 space-y-4 prose text-gray-400 prose-heading:no-underline prose-headings:text-white prose-a:text-white prose-a:no-underline prose-hr:border-gray-800 prose-strong:text-white prose-strong:font-normal prose-strong:bg-gray-800 prose-strong:py-1 prose-strong:px-2 prose-strong:rounded-lg prose-pre:!mt-0";
 const currentCategory = ref<string | null>(null);
 
 const router = useRouter();
