@@ -23,9 +23,9 @@ The process to obtain this access is very simple:
 
 4. Alternatively, you can send a direct message to the admin/op.
 
-## Closing
+5. After that, the admin/op will inform you if you have gained access, and give you role **Aternos Access** in discord.
 
-After that, the admin/op will inform you if you have gained access. If you don't receive a response promptly, don't hesitate to remind the admin/op.
+## Closing
 
 Your support means the world to us. It's through your support that our server can continue to grow and thrive. We are dedicated to constant improvement, and we have exciting plans to provide even better facilities and experiences for our community in the future.
 
