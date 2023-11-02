@@ -19,7 +19,7 @@ The process to obtain this access is very simple:
 
 2. Join our server's [Discord](https://discord.gg/pgNpcyu9QA).
 
-3. If you already have an account and have joined our Discord server, simply go to the chat channel and politely request access from the admin/op in that channel.
+3. If you already have an account and have joined our Discord server, simply go to the **chat** channel and politely request access from the admin/op in that channel.
 
 4. Alternatively, you can send a direct message to the admin/op.
 
