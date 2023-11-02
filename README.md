@@ -4,7 +4,7 @@
 
 OFFICIAL Wangyland **[website](https://wangyland.vercel.app)**.
 
-Minecraft server hosted on Aternos, supporting Minecraft `Java`, ``Bedrock`, and `Pocket Edition`, enabling cross-platform play. 
+Minecraft server hosted on Aternos, supporting Minecraft `Java`, `Bedrock`, and `Pocket Edition`, enabling cross-platform play. 
 
 ## License
 
