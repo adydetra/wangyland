@@ -1,8 +1,3 @@
-<template>
-  <NuxtLoadingIndicator />
-  <NuxtPage />
-</template>
-
 <script lang="ts" setup>
 const route = useRoute();
 
@@ -14,3 +9,8 @@ useSeoMeta({
 
 defineOgImage({ component: "OgImageHome", title: "Wangyland" });
 </script>
+
+<template>
+  <NuxtLoadingIndicator />
+  <NuxtPage />
+</template>

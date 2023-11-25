@@ -1,3 +1,14 @@
+<script setup>
+defineOptions({
+  inheritAttrs: false,
+});
+
+const topLogo = "w-full h-10";
+const props = defineProps({
+  title: String,
+});
+</script>
+
 <template>
   <div class="w-full h-full" style="background: radial-gradient(circle, rgba(15,23,42,1) 0%, rgba(23,37,84,1) 0%, rgba(0,0,0,1) 100%);">
     <svg class="absolute inset-0 opacity-40" style="z-index: 0" width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,14 +133,3 @@
     </div>
   </div>
 </template>
-
-<script setup>
-defineOptions({
-  inheritAttrs: false,
-});
-
-const topLogo = "w-full h-10";
-const props = defineProps({
-  title: String,
-});
-</script>

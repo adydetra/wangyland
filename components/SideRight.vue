@@ -1,3 +1,13 @@
+<script lang="ts" setup>
+const { toc } = useContent();
+const color = "text-gray-400 hover:text-blue-400";
+
+const communitys = [
+  { to: "https://github.com/adydetra/wangyland", icon: "ph:shooting-star-bold", text: "Star on GitHub" },
+  { to: "https://github.com/sponsors/adydetra", icon: "mdi:love", text: "Become a Sponsor" },
+];
+</script>
+
 <template>
   <section class="relative select-none">
     <div class="py-8 lg:px-4 lg:-mx-4 space-y-8 text-sm hidden lg:block lg:sticky top-0 min-h-screen overflow-y-auto">
@@ -29,13 +39,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-const { toc } = useContent();
-const color = "text-gray-400 hover:text-blue-400";
-
-const communitys = [
-  { to: "https://github.com/adydetra/wangyland", icon: "ph:shooting-star-bold", text: "Star on GitHub" },
-  { to: "https://github.com/sponsors/adydetra", icon: "mdi:love", text: "Become a Sponsor" },
-];
-</script>

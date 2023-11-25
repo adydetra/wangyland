@@ -1,3 +1,8 @@
+<script lang="ts" setup>
+const route = useRoute();
+const icon = "mr-2 text-lg leading-none -mt-1";
+</script>
+
 <template>
   <div class="container mx-auto px-4 lg:px-0">
     <nav class="bg-transparent py-7 flex justify-between">
@@ -36,8 +41,3 @@
     </nav>
   </div>
 </template>
-
-<script setup lang="ts">
-const route = useRoute();
-const icon = "mr-2 text-lg leading-none -mt-1";
-</script>

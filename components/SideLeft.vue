@@ -1,3 +1,16 @@
+<script lang="ts" setup>
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
+
+const route = useRoute();
+const links = computed(() => [
+  { to: "/aternos-access", label: "Aternos Access", icon: "mdi:minecraft" },
+  { to: "/changelog", label: "Changelog", icon: "pajamas:log" },
+]);
+const isPageActive = (path: string | undefined) => {
+  return path && route.path === path;
+};
+</script>
+
 <template>
   <aside class="relative select-none">
     <div class="py-8 lg:px-4 lg:-mx-4 space-y-6 text-sm hidden lg:block sticky top-0 h-[calc(100vh)] overflow-y-auto">
@@ -38,16 +51,3 @@
     </div>
   </aside>
 </template>
-
-<script setup lang="ts">
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
-
-const route = useRoute();
-const links = computed(() => [
-  { to: "/aternos-access", label: "Aternos Access", icon: "mdi:minecraft" },
-  { to: "/changelog", label: "Changelog", icon: "pajamas:log" },
-]);
-const isPageActive = (path: string | undefined) => {
-  return path && route.path === path;
-};
-</script>

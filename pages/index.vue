@@ -1,3 +1,10 @@
+<script lang="ts" setup>
+useHead({
+  title: "Wangyland",
+  titleTemplate: "Wangyland",
+});
+</script>
+
 <template>
   <NuxtLayout>
     <section class="select-none grid grid-cols-7 container mx-auto py-12 px-4 lg:px-0">
@@ -31,10 +38,3 @@
     </section>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-useHead({
-  title: "Wangyland",
-  titleTemplate: "Wangyland",
-});
-</script>
