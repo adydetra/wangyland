@@ -2,9 +2,9 @@
 const { toc } = useContent();
 const color = "text-gray-400 hover:text-blue-400";
 
-const communitys = [
-  { to: "https://github.com/adydetra/wangyland", icon: "ph:shooting-star-bold", text: "Star on GitHub" },
-  { to: "https://github.com/sponsors/adydetra", icon: "mdi:love", text: "Become a Sponsor" },
+const community = [
+  { to: "github.com/adydetra/wangyland", icon: "ph:shooting-star-bold", text: "Star on GitHub" },
+  { to: "github.com/sponsors/adydetra", icon: "mdi:love", text: "Become a Sponsor" },
 ];
 </script>
 
@@ -29,9 +29,9 @@ const communitys = [
       <div class="space-y-4">
         <p class="text-gray-300 font-bold">Community</p>
         <ul class="space-y-3">
-          <li v-for="community in communitys" :key="community.to">
-            <NuxtLink :to="community.to" target="_blank" class="flex items-center gap-2" :class="color" :aria-label="community.text">
-              <Icon class="w-4 h-4" :name="community.icon" />{{ community.text }}
+          <li v-for="data in community" :key="data.to">
+            <NuxtLink :to="'https://' + data.to" target="_blank" class="flex items-center gap-2" :class="color" :aria-label="data.text">
+              <Icon class="w-4 h-4" :name="data.icon" />{{ data.text }}
             </NuxtLink>
           </li>
         </ul>
