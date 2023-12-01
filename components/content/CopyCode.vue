@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-const state = ref("init");
-const copyButtonRef = ref<HTMLElement>();
+import { useClipboard } from "@vueuse/core";
 
 const props = defineProps({
   content: {
@@ -13,27 +12,13 @@ const props = defineProps({
   },
 });
 
-const { copy: copyToClipboard } = useClipboard();
-onClickOutside(copyButtonRef, () => {
-  if (state.value === "copied") {
-    state.value = "init";
-  }
-});
-
-const copy = (_e: MouseEvent) => {
-  copyToClipboard(props.content)
-    .then(() => {
-      state.value = "copied";
-    })
-    .catch((err) => {
-      console.warn("Couldn't copy to clipboard!", err);
-    });
-};
+const source = ref("" + props.content);
+const { copy, copied } = useClipboard({ source });
 </script>
 
 <template>
-  <button ref="copyButtonRef" :class="[(show || state === 'copied') && 'show']" @click="copy" title="Copy">
-    <Icon v-if="state === 'copied'" name="mingcute:copy-3-fill" class="text-blue-300" />
-    <Icon v-else name="mingcute:copy-3-line" class="hover:text-blue-300"/>
+  <button @click="copy(source)" title="Copy">
+    <Icon v-if="!copied" name="i-ri:checkbox-multiple-blank-line" class="hover:text-blue-300" />
+    <Icon v-else name="i-ri:check-double-fill" class="text-blue-300"/>
   </button>
 </template>

@@ -11,6 +11,6 @@ defineProps({
 <template>
   <div class="relative overflow-hidden group" @mouseenter="hovered = true" @mouseleave="hovered = false">
     <slot />
-    <CopyCode :show="hovered" :content="code" class="absolute bottom-9 end-4 lg:opacity-0 group-hover:opacity-100" />
+    <CopyCode :show="hovered" :content="code" class="absolute bottom-9 end-4" />
   </div>
 </template>
