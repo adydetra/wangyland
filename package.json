@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "wangyland",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,10 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.0.3",
+    "@nuxt/devtools": "^1.0.4",
     "@nuxthq/studio": "^1.0.5",
     "nuxt": "^3.8.2",
-    "vue": "^3.3.9",
+    "vue": "^3.3.10",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
