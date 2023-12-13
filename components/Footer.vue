@@ -9,7 +9,7 @@ const social = [
   <section class="px-4 lg:px-0 border-y border-slate-900 mt-auto text-gray-400 font-light tracking-wide">
     <div class="container mx-auto py-12 flex justify-between">
       <div>
-        <NuxtLink to="https://adydetra.my.id" target="_blank" class="text-sm hover:text-indigo-300" aria-label="Powered by adydetra">
+        <NuxtLink to="https://www.adydetra.my.id" target="_blank" class="text-sm hover:text-indigo-300" aria-label="Powered by adydetra">
           <Icon class="leading-none -mt-1 mr-2 text-lg" size="16" name="octicon:octoface" />Powered By adydetra
         </NuxtLink>
       </div>
