@@ -24,8 +24,8 @@
     "nuxt": "^3.9.0",
     "nuxt-headlessui": "^1.1.5",
     "nuxt-icon": "^0.6.8",
-    "nuxt-og-image": "3.0.0-rc.12",
-    "vue": "^3.4.0",
+    "nuxt-og-image": "3.0.0-rc.14",
+    "vue": "^3.4.3",
     "vue-router": "^4.2.5"
   }
 }
