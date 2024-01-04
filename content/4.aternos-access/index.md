@@ -1,6 +1,6 @@
 ---
 title: Aternos Access
-description: Minecraft server hosted on Aternos, supporting Minecraft Java, Bedrock, and Pocket Edition, enabling cross-platform play. 
+description: Minecraft server hosted on Aternos, supporting Minecraft Java, Bedrock, and Pocket Edition, enabling cross-platform play.
 ---
 
 # Aternos Access

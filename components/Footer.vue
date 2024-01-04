@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const social = [
-  { label: "GitHub", icon: "octicon:mark-github-16", to: "github.com/adydetra/wangyland" },
-  { label: "Discord", icon: "mdi:discord", to: "discord.gg/pgNpcyu9QA" },
+  { label: 'GitHub', icon: 'octicon:mark-github-16', to: 'github.com/adydetra/wangyland' },
+  { label: 'Discord', icon: 'mdi:discord', to: 'discord.gg/pgNpcyu9QA' },
 ];
 </script>
 
@@ -14,7 +14,7 @@ const social = [
         </NuxtLink>
       </div>
       <div class="space-x-5 lg:space-x-10">
-        <NuxtLink v-for="(data, index) in social" :key="index" :to="'https://' + data.to" target="_blank" :aria-label="data.label">
+        <NuxtLink v-for="(data, index) in social" :key="index" :to="`https://${data.to}`" target="_blank" :aria-label="data.label">
           <Icon class="leading-none -mt-1 hover:text-indigo-300" size="16" :name="data.icon" />
         </NuxtLink>
       </div>

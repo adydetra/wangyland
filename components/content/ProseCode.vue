@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-const hovered = ref(false);
 defineProps({
   code: {
     type: String,
-    default: "",
+    default: '',
   },
 });
+const hovered = ref(false);
 </script>
 
 <template>

@@ -2,8 +2,8 @@
 const { toc } = useContent();
 const activeLinkId = ref('');
 const community = [
-  { to: "github.com/adydetra/wangyland", icon: "ph:shooting-star-bold", text: "Star on GitHub" },
-  { to: "github.com/sponsors/adydetra", icon: "mdi:love", text: "Become a Sponsor" },
+  { to: 'github.com/adydetra/wangyland', icon: 'ph:shooting-star-bold', text: 'Star on GitHub' },
+  { to: 'github.com/sponsors/adydetra', icon: 'mdi:love', text: 'Become a Sponsor' },
 ];
 
 interface TocLink {
@@ -41,7 +41,9 @@ onUnmounted(() => {
     <div class="py-8 space-y-8 text-sm hidden lg:block lg:sticky top-0 min-h-screen overflow-y-auto">
       <!-- TOC -->
       <div class="space-y-4">
-        <p class="text-gray-300 font-bold">Table of Contents</p>
+        <p class="text-gray-300 font-bold">
+          Table of Contents
+        </p>
         <ul v-if="toc && toc.links" class="space-y-3">
           <li v-for="link in toc.links" :key="link.text">
             <NuxtLink :to="`#${link.id}`" class="block truncate" :class="[{ active: link.id === activeLinkId }]" :aria-label="link.text">
@@ -51,14 +53,16 @@ onUnmounted(() => {
         </ul>
       </div>
 
-      <div class="border border-dashed border-gray-700/50"></div>
+      <div class="border border-dashed border-gray-700/50" />
 
       <!-- Community -->
       <div class="space-y-4">
-        <p class="text-gray-300 font-bold">Community</p>
+        <p class="text-gray-300 font-bold">
+          Community
+        </p>
         <ul class="space-y-3">
           <li v-for="data in community" :key="data.to">
-            <NuxtLink :to="'https://' + data.to" target="_blank" class="flex items-center gap-2" :aria-label="data.text">
+            <NuxtLink :to="`https://${data.to}`" target="_blank" class="flex items-center gap-2" :aria-label="data.text">
               <Icon class="w-4 h-4" :name="data.icon" />{{ data.text }}
             </NuxtLink>
           </li>

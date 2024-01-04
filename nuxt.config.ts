@@ -1,15 +1,15 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1",
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: {
-        lang: "en",
+        lang: 'en',
       },
     },
   },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/image", "@nuxt/content", "nuxt-icon", "nuxt-headlessui", "nuxt-og-image", "@vueuse/nuxt", "@nuxthq/studio"],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image', '@nuxt/content', 'nuxt-icon', 'nuxt-headlessui', 'nuxt-og-image', '@vueuse/nuxt', '@nuxthq/studio'],
 
   devtools: { enabled: false },
 
@@ -21,25 +21,25 @@ export default defineNuxtConfig({
     documentDriven: true,
     highlight: {
       theme: {
-        default: "github-dark",
+        default: 'github-dark',
       },
     },
   },
 
   image: {
     quality: 70,
-    format: ["webp"],
+    format: ['webp'],
   },
 
   headlessui: {
-    prefix: "Headless",
+    prefix: 'Headless',
   },
 
   googleFonts: {
     families: {
       Outfit: [200, 300, 400, 500, 600, 800],
     },
-    display: "swap",
+    display: 'swap',
     prefetch: true,
     preconnect: true,
   },

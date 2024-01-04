@@ -3,10 +3,14 @@ defineOptions({
   inheritAttrs: false,
 });
 
-const topLogo = "w-full h-10";
-const props = defineProps({
-  title: String,
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
 });
+
+const topLogo = 'w-full h-10';
 </script>
 
 <template>
@@ -126,10 +130,10 @@ const props = defineProps({
 
     <div class="h-full flex flex-col justify-center items-center relative z-10">
       <div class="flex items-center space-x-6 absolute top-5 left-5">
-        <img src="/img/aternos-logo.png" alt="" :class="topLogo" />
-        <img src="/img/minecraft-logo.png" alt="" :class="topLogo" />
+        <img src="/img/aternos-logo.png" alt="" :class="topLogo">
+        <img src="/img/minecraft-logo.png" alt="" :class="topLogo">
       </div>
-      <img src="/img/logo.png" alt="" class="w-56 h-56" />
+      <img src="/img/logo.png" alt="" class="w-56 h-56">
     </div>
   </div>
 </template>
