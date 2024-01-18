@@ -23,17 +23,19 @@ onMounted(() => {
 </script>
 
 <template>
-  <NuxtLayout name="guide">
-    <section class="grid grid-cols-11 mx-auto">
-      <SideLeft class="col-span-2" />
-      <ContentDoc v-slot="{ doc }">
-        <article :class="content">
-          <span v-if="currentCategory" class="font-bold text-blue-500">{{ currentCategory }}</span>
-          <ContentRenderer :value="doc" />
-          <PrevNext />
-        </article>
-      </ContentDoc>
-      <SideRight class="col-span-2" />
-    </section>
-  </NuxtLayout>
+  <div>
+    <NuxtLayout name="guide">
+      <section class="grid grid-cols-11 mx-auto">
+        <SideLeft class="col-span-2" />
+        <ContentDoc v-slot="{ doc }">
+          <article :class="content">
+            <span v-if="currentCategory" class="font-bold text-blue-500">{{ currentCategory }}</span>
+            <ContentRenderer :value="doc" />
+            <PrevNext />
+          </article>
+        </ContentDoc>
+        <SideRight class="col-span-2" />
+      </section>
+    </NuxtLayout>
+  </div>
 </template>
