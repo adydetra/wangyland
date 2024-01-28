@@ -11,10 +11,6 @@ description: Changelog is a log or record of all notable changes made to a proje
 
 - Minecraft Version 1.20 > 1.20.4
 
-#### ( / ) Changed
-
-- KIT Reward for Daily & Weekly
-
 ---
 
 ### :date: - 08/10/2023
