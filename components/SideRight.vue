@@ -7,8 +7,8 @@ const community = [
 ];
 
 interface TocLink {
-  id: string
-  text: string
+  id: string;
+  text: string;
 }
 
 function handleScroll() {
