@@ -11,6 +11,6 @@ defineOgImage({ component: 'OgImageHome', title: 'Wangyland' });
 </script>
 
 <template>
-  <NuxtLoadingIndicator />
+  <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#8f94fb 0%,#4e54c8 50%,#4A00E0 100%)" />
   <NuxtPage />
 </template>
