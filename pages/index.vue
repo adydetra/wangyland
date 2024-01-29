@@ -16,16 +16,16 @@ useHead({
                 Wangyland
               </text>
             </h2>
-            <p class="hidden lg:block my-3 leading-7 font-extralight">
+            <p class="hidden lg:block my-3 leading-8 font-extralight">
               The Wangyland server is currently hosted in Indonesia. This You can play<br>
               Adventure, Arena, Discord, Economy, Land Claim, Ranks, SMP, Survival<br>
               on the Wangyland server.
             </p>
-            <p class="lg:hidden text-sm my-3 leading-7 font-extralight">
+            <p class="lg:hidden text-sm my-3 leading-8 font-extralight">
               The Wangyland server is currently hosted in Indonesia. This You can play Adventure, Arena, Discord, Economy, Land Claim, Ranks, SMP, Survival<br>
               on the Wangyland server.
             </p>
-            <p class="mt-12 font-semibold text-xl">
+            <p class="mt-12 font-semibold leading-relaxed text-xl">
               Minecraft game version does Wangyland server
             </p>
             <p class="my-3 font-extralight">
@@ -44,7 +44,7 @@ useHead({
           <NuxtImg
             class="w-[80%] p-4 rounded-2xl hidden lg:block border-dashed border hover:border-double transition duration-500 ease-in-out backdrop-blur-sm bg-white/5 hover:bg-indigo-300/20 hover:border-indigo-400 hover:border-opacity-60 border-indigo-400"
             src="/img/1.png"
-            alt="We Confident"
+            alt=""
           />
         </div>
       </section>

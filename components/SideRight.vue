@@ -3,6 +3,7 @@ const { toc } = useContent();
 const activeLinkId = ref('');
 const community = [
   { to: 'github.com/adydetra/wangyland', icon: 'ph:shooting-star-bold', text: 'Star on GitHub' },
+  { to: 'discord.gg/pgNpcyu9QA', icon: 'mdi:discord', text: 'Chat on Discord' },
   { to: 'github.com/sponsors/adydetra', icon: 'mdi:love', text: 'Become a Sponsor' },
 ];
 
@@ -40,11 +41,11 @@ onUnmounted(() => {
   <section class="relative select-none">
     <div class="py-8 space-y-8 text-sm hidden lg:block lg:sticky top-0 min-h-screen overflow-y-auto">
       <!-- TOC -->
-      <div class="space-y-4">
+      <div class="space-y-5">
         <p class="text-gray-300 font-bold">
           Table of Contents
         </p>
-        <ul v-if="toc && toc.links" class="space-y-3">
+        <ul v-if="toc && toc.links" class="space-y-4">
           <li v-for="link in toc.links" :key="link.text">
             <NuxtLink :to="`#${link.id}`" class="block truncate" :class="[{ active: link.id === activeLinkId }]" :aria-label="link.text">
               {{ link.text }}
@@ -56,14 +57,14 @@ onUnmounted(() => {
       <div class="border border-dashed border-gray-700/50" />
 
       <!-- Community -->
-      <div class="space-y-4">
+      <div class="space-y-5">
         <p class="text-gray-300 font-bold">
           Community
         </p>
-        <ul class="space-y-3">
+        <ul class="space-y-4">
           <li v-for="data in community" :key="data.to">
             <NuxtLink :to="`https://${data.to}`" target="_blank" class="flex items-center gap-2" :aria-label="data.text">
-              <Icon class="w-4 h-4" :name="data.icon" />{{ data.text }}
+              <Icon class="size-4" :name="data.icon" />{{ data.text }}<Icon class="size-2.5 -mt-4 -ml-1 opacity-50" name="uim:arrow-up-right" />
             </NuxtLink>
           </li>
         </ul>
@@ -80,6 +81,6 @@ p {
   @apply text-gray-500 font-bold;
 }
 .active {
-  @apply text-blue-400 font-bold;
+  @apply text-blue-400;
 }
 </style>
