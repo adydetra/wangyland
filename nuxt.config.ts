@@ -11,10 +11,13 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image', '@nuxt/content', 'nuxt-icon', 'nuxt-headlessui', 'nuxt-og-image', '@vueuse/nuxt', '@nuxthq/studio'],
 
-  devtools: { enabled: false },
-
-  tailwindcss: {
-    viewer: false,
+  googleFonts: {
+    families: {
+      Lexend: [200, 300, 400, 500, 600, 800],
+    },
+    display: 'swap',
+    prefetch: true,
+    preconnect: true,
   },
 
   content: {
@@ -35,12 +38,11 @@ export default defineNuxtConfig({
     prefix: 'Headless',
   },
 
-  googleFonts: {
-    families: {
-      Outfit: [200, 300, 400, 500, 600, 800],
-    },
-    display: 'swap',
-    prefetch: true,
-    preconnect: true,
+  tailwindcss: {
+    viewer: false,
+  },
+
+  devtools: {
+    enabled: true,
   },
 });
