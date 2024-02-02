@@ -9,7 +9,11 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image', '@nuxt/content', 'nuxt-icon', 'nuxt-headlessui', 'nuxt-og-image', '@vueuse/nuxt', '@nuxthq/studio'],
+  modules: ['@nuxthq/studio', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/content', '@nuxt/image', '@vueuse/nuxt', 'nuxt-icon', 'nuxt-headlessui', 'nuxt-og-image'],
+
+  site: {
+    url: 'https://wangyland.vercel.app',
+  },
 
   googleFonts: {
     families: {
