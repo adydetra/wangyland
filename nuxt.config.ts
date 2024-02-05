@@ -33,6 +33,12 @@ export default defineNuxtConfig({
     },
   },
 
+  ogImage: {
+    fonts: [
+      'Lexend:400',
+    ],
+  },
+
   image: {
     quality: 70,
     format: ['webp'],

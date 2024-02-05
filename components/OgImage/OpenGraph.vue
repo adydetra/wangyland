@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="size-full" style="background: radial-gradient(circle, rgba(15,23,42,1) 0%, rgba(23,37,84,1) 0%, rgba(0,0,0,1) 100%);">
+  <div class="size-full" style="background: radial-gradient(circle, rgba(15,23,42,1) 0%, rgba(23,37,84,1) 0%, rgba(0,0,0,1) 100%)">
     <svg class="absolute inset-0 opacity-40" style="z-index: 0" width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M165.165 460.097C665.045 774.444 932.717 309.581 918.141 89.1189C903.565 -131.34 701.988 54.0219 229.207 -264.678C-5.12998 -422.28 -543.751 -34.9957 -529.152 185.807C-519.833 326.75 -379.035 310.245 -189.346 337.462C-81.376 352.603 41.2774 380.199 165.165 460.097Z"
@@ -126,12 +126,11 @@ defineProps({
       />
     </svg>
 
-    <div class="h-full flex flex-col justify-center items-center relative z-10">
-      <div class="flex items-center space-x-6 absolute top-5 left-5">
-        <img src="/img/aternos-logo.png" alt="" class="w-full h-10">
-        <img src="/img/minecraft-logo.png" alt="" class="w-full h-10">
-      </div>
-      <img src="/img/logo.png" alt="" class="size-56">
+    <div class="relative h-full flex flex-row items-center justify-center px-40 text-white">
+      <img src="/img/logo.png" width="110" class="mr-6 rounded-full">
+      <h1 :class="title?.length > 25 ? 'text-5xl' : 'text-6xl'">
+        {{ title }}
+      </h1>
     </div>
   </div>
 </template>
