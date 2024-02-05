@@ -4,7 +4,7 @@ const route = useRoute();
 useSeoMeta({
   title: () => (route.meta.title as string) || '',
   titleTemplate: title => (title ? `${title} - Guide` : 'Wangyland'),
-  description: 'Minecraft server hosted on Aternos, supporting Minecraft Java, Bedrock, and Pocket Edition, enabling cross-platform play.',
+  description: 'Minecraft server hosted on Aternos, Cross-platform Minecraft Java, and Bedrock (Mobile, Desktop, Console).',
   twitterCard: 'summary_large_image',
 });
 
