@@ -9,20 +9,16 @@ To run our Minecraft server, we use the Aternos server hosting service. In some 
 
 This situation can be problematic for those who want to access the server and have to wait for an admin/op to open it. But don't worry, if you have an Aternos account, we can grant you access so you can open the server on your own without having to request help from an admin/op.
 
-Therefore, we highly recommend having an Aternos account so that we can provide you access to manage your own server.
+Therefore, we highly recommend having an **Aternos account** so that we can provide you access to manage your own server.
 
 ## Process
 
 The process to obtain this access is very simple:
 
 1. First, make sure you have an [Aternos account](https://aternos.org/).
-
 2. Join our server's [Discord](https://discord.gg/pgNpcyu9QA).
-
 3. If you already have an account and have joined our Discord server, simply go to the **chat** channel and politely request access from the admin/op in that channel.
-
 4. Alternatively, you can send a direct message to the admin/op.
-
 5. After that, the admin/op will inform you if you have gained access, and give you role **Aternos Access** in discord.
 
 ## Closing
