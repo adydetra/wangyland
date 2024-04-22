@@ -18,7 +18,7 @@ Minecraft server hosted on Aternos, supporting Minecraft `Java`, `Bedrock`, and 
 
 ## Lets play! (Usage)
 
-`Java` (IP Server)
+`Java`
 
 ```bash
 wangylandid.aternos.me:56345
