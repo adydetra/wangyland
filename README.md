@@ -40,4 +40,4 @@ Port
 
 ## License
 
-The code is licensed [MIT](LICENSE). `Creator server` and `server maintainer` managed by @adydetra, and idea for the name `wangyland` is from @JuniorCalvin and @Tanuki74.
+The code is licensed [MIT](LICENSE). `Creator server` and `server maintainer` managed by @adydetra, and idea for the name `wangyland` is from [@JuniorCalvin](https://github.com/JuniorCalvin) and [@Tanuki74](https://github.com/Tanuki74).
