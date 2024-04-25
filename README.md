@@ -2,6 +2,8 @@
 
 ![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
 
+![poster](/public/img/poster.jpg)
+
 OFFICIAL Wangyland **[website](https://wangyland.vercel.app)**.
 
 Minecraft server hosted on Aternos, supporting Minecraft `Java`, `Bedrock`, and `Pocket Edition`, enabling cross-platform play.
@@ -40,4 +42,4 @@ Port
 
 ## License
 
-The code is licensed [MIT](LICENSE). `Server` creator and maintainer managed by [@adydetra](https://github.com/adydetra), and idea for the name `wangyland` is from [@JuniorCalvin](https://github.com/JuniorCalvin) and [@Tanuki74](https://github.com/Tanuki74).
+The code is licensed [MIT](LICENSE). `Website` creator and `Server` maintainer managed by [@adydetra](https://github.com/adydetra), and idea for the name `wangyland` is from [@JuniorCalvin](https://github.com/JuniorCalvin) and [@Tanuki74](https://github.com/Tanuki74).
