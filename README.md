@@ -2,7 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
 
-![poster](/public/img/poster.jpg)
+![poster](/src/public/img/poster.jpg)
 
 OFFICIAL Wangyland **[website](https://wangyland.vercel.app)**.
 
