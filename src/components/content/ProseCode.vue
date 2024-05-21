@@ -1,10 +1,7 @@
 <script lang="ts" setup>
-defineProps({
-  code: {
-    type: String,
-    default: '',
-  },
-});
+defineProps<{
+  code: string;
+}>();
 const hovered = ref(false);
 </script>
 
