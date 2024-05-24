@@ -5,6 +5,15 @@ description: Changelog is a log or record of all notable changes made to a proje
 
 # [Changelog](https://wangyland.vercel.app/changelog)
 
+### :date: - 24/05/2024
+
+#### ( / ) Changed
+
+- Remove Plugin: OnePlayerSleep
+- Remove Plugin: AutoMessage
+
+---
+
 ### :date: - 28/01/2024
 
 #### ( ^ ) Update
