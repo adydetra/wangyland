@@ -5,6 +5,14 @@ description: Changelog is a log or record of all notable changes made to a proje
 
 # [Changelog](https://wangyland.vercel.app/changelog)
 
+### :date: - 25/05/2024
+
+#### ( ^ ) Update
+
+- Minecraft Version 1.20.4 > 1.20.6
+
+---
+
 ### :date: - 24/05/2024
 
 #### ( / ) Changed
