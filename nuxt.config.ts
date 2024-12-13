@@ -11,7 +11,18 @@ export default defineNuxtConfig({
 
   srcDir: 'src/',
 
-  modules: ['@nuxthq/studio', '@nuxtjs/google-fonts', '@nuxtjs/tailwindcss', '@nuxtjs/sitemap', '@nuxt/content', '@nuxt/image', '@vueuse/nuxt', 'nuxt-icon', 'nuxt-headlessui', 'nuxt-og-image'],
+  modules: [
+    '@nuxt/content',
+    '@nuxt/icon',
+    '@nuxt/image',
+    '@nuxthq/studio',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/sitemap',
+    '@vueuse/nuxt',
+    'nuxt-headlessui',
+    'nuxt-og-image',
+  ],
 
   site: {
     url: 'https://wangyland.vercel.app',
