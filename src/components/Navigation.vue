@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const route = useRoute();
-const icon = 'mr-2 text-lg leading-none -mt-1';
+const icon = 'mr-2 text-lg leading-none -mb-1.5';
 </script>
 
 <template>

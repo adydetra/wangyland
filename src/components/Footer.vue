@@ -10,12 +10,12 @@ const social = [
     <div class="container mx-auto py-12 flex justify-between">
       <div>
         <NuxtLink to="https://www.adydetra.my.id" target="_blank" class="text-sm hover:text-indigo-300" aria-label="Built by adydetra">
-          <Icon class="leading-none -mt-1 mr-2 text-lg" size="16" name="octicon:octoface" />Built by adydetra
+          <Icon class="leading-none -mb-0.5 mr-2 text-lg" size="16" name="octicon:octoface" />Built by adydetra
         </NuxtLink>
       </div>
       <div class="space-x-5 lg:space-x-10">
         <NuxtLink v-for="(data, index) in social" :key="index" :to="`https://${data.to}`" target="_blank" :aria-label="data.label">
-          <Icon class="leading-none -mt-1 hover:text-indigo-300" size="16" :name="data.icon" />
+          <Icon class="leading-none -mb-0.5 hover:text-indigo-300" size="16" :name="data.icon" />
         </NuxtLink>
       </div>
     </div>
