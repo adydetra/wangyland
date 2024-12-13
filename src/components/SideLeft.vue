@@ -47,7 +47,7 @@ function isPageActive(path: string | undefined) {
         :class="{ '!text-blue-400 font-semibold': route.path === link.to }"
         :aria-label="`Read ${link.label}`"
       >
-        <Icon class="mr-2" size="16" :name="link.icon" />
+        <Icon class="mr-2 mt-0.5" size="16" :name="link.icon" />
         {{ link.label }}
       </NuxtLink>
     </div>
