@@ -14,7 +14,7 @@ function isPageActive(path: string | undefined) {
 <template>
   <aside class="relative select-none">
     <div class="py-8 lg:px-4 lg:-mx-4 space-y-6 text-sm hidden lg:block sticky top-0 h-[calc(100vh)] overflow-y-auto">
-      <Disclosure v-for="category in ['Get Started', 'Commands', 'Advanced']" :key="category" v-slot="{ open }" :default-open="true">
+      <Disclosure v-for="category in ['Get Started', 'Commands', 'Advanced']" :key="category" v-slot="{ open }" :default-open="true" as="div" class="space-y-6">
         <DisclosureButton class="flex items-center justify-between w-full pr-6 pt-2">
           <h2 class="text-gray-300 font-bold">
             {{ category }}
