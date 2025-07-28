@@ -9,8 +9,6 @@ export default defineNuxtConfig({
     },
   },
 
-  srcDir: 'src/',
-
   modules: [
     '@nuxt/content',
     '@nuxt/icon',
