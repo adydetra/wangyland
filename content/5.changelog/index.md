@@ -5,6 +5,21 @@ description: Changelog is a log or record of all notable changes made to a proje
 
 # [Changelog](https://wangyland.vercel.app/changelog)
 
+### :date: - 16/12/2025
+
+#### ( ^ ) Update
+
+- Minecraft Version 1.21.4 > 1.21.10
+
+#### ( / ) Changed
+
+- Remove Plugin: ZNPCs
+- Remove Plugin: PlayerKits
+- Remove Plugin: ajLeaderboard
+- Remove Plugin: JukeLooper
+
+---
+
 ### :date: - 01/01/2025
 
 #### ( ^ ) Update
