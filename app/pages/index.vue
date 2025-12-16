@@ -29,7 +29,7 @@ useHead({
               Minecraft game version does Wangyland server
             </p>
             <p class="my-3 font-extralight">
-              Wangyland supports Minecraft version: 1.21.4
+              Wangyland supports Minecraft version: 1.21.10
             </p>
             <p class="mt-12 font-semibold text-xl">
               Server IP for Wangyland
