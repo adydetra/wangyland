@@ -8,7 +8,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 });
 
-defineOgImageComponent('OpenGraph', {
+defineOgImage('OpenGraph', {
   title: 'Wangyland',
 });
 </script>

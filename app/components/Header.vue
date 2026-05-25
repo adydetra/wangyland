@@ -20,7 +20,7 @@ function copyIp() {
         class="text-indigo-100 text-xs md:text-lg font-extrabold me-4 mb-0"
         :class="data.class"
       >
-        <Icon class="mr-3 -mt-1" name="🚀" />
+        <span class="mr-3 inline-block">🚀</span>
         {{ data.label }}
       </p>
 

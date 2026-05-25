@@ -1,3 +1,5 @@
+import tailwindcss from '@tailwindcss/vite';
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -11,56 +13,50 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/content',
+    '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxthq/studio',
-    '@nuxtjs/google-fonts',
-    '@nuxtjs/tailwindcss',
     '@nuxtjs/sitemap',
     '@vueuse/nuxt',
-    'nuxt-headlessui',
     'nuxt-og-image',
   ],
+
+  fonts: {
+    families: [
+      { name: 'Lexend', provider: 'google', weights: ['200', '300', '400', '500', '600', '700', '800', '900'] },
+    ],
+  },
 
   site: {
     url: 'https://wangyland.vercel.app',
   },
 
-  googleFonts: {
-    families: {
-      Lexend: [200, 300, 400, 500, 600, 800],
-    },
-    display: 'swap',
-    prefetch: true,
-    preconnect: true,
+  css: ['./app/assets/css/main.css'],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
 
   content: {
-    documentDriven: true,
-    highlight: {
-      theme: {
-        default: 'github-dark',
+    experimental: {
+      sqliteConnector: 'native',
+    },
+    build: {
+      markdown: {
+        highlight: {
+          theme: {
+            default: 'github-dark',
+          },
+        },
       },
     },
-  },
-
-  ogImage: {
-    fonts: [
-      'Lexend:400',
-    ],
   },
 
   image: {
     quality: 70,
     format: ['webp'],
-  },
-
-  headlessui: {
-    prefix: 'Headless',
-  },
-
-  tailwindcss: {
-    viewer: false,
   },
 
   devtools: {

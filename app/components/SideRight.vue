@@ -1,5 +1,10 @@
 <script lang="ts" setup>
-const { toc } = useContent();
+const route = useRoute();
+const { data: page } = await useAsyncData(`toc-${route.path}`, () => {
+  return queryCollection('content').path(route.path).first();
+});
+
+const toc = computed(() => page.value?.body?.toc);
 const activeLinkId = ref('');
 const community = [
   { to: 'github.com/adydetra/wangyland', icon: 'ph:shooting-star-bold', text: 'Star on GitHub' },
@@ -13,6 +18,8 @@ interface TocLink {
 }
 
 function handleScroll() {
+  if (!toc.value || !toc.value.links)
+    return;
   const scrollPosition = window.scrollY;
   const offset = 1500;
 

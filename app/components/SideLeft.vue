@@ -6,6 +6,18 @@ const links = computed(() => [
   { to: '/aternos-access', label: 'Aternos Access', icon: 'mdi:minecraft' },
   { to: '/changelog', label: 'Changelog', icon: 'pajamas:log' },
 ]);
+
+const { data: allPages } = await useAsyncData('left-navigation', () => {
+  return queryCollection('content')
+    .select('title', 'path')
+    .all();
+});
+
+function getPagesForCategory(category: string) {
+  const prefix = `/${category.toLowerCase().replace(' ', '-')}`;
+  return (allPages.value || []).filter(page => page.path === prefix || page.path.startsWith(`${prefix}/`));
+}
+
 function isPageActive(path: string | undefined) {
   return path && route.path === path;
 }
@@ -22,20 +34,18 @@ function isPageActive(path: string | undefined) {
           <Icon name="octicon:chevron-right-12" :class="open && 'rotate-90 transform'" />
         </DisclosureButton>
         <DisclosurePanel>
-          <ContentList v-slot="{ list }" :path="`/${category.toLowerCase().replace(' ', '-')}`">
-            <ul v-for="content in list" :key="content._path" class="pl-2">
-              <li class="border-l border-gray-700 hover:border-blue-400 pl-4 py-2" :class="{ '!border-blue-400': isPageActive(content._path) }">
-                <NuxtLink
-                  :to="content._path"
-                  class="text-gray-400 hover:text-blue-300"
-                  :class="{ '!text-blue-400 font-semibold': isPageActive(content._path) }"
-                  :aria-label="content.title"
-                >
-                  {{ content.title }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </ContentList>
+          <ul v-for="content in getPagesForCategory(category)" :key="content.path" class="pl-2">
+            <li class="border-l border-gray-700 hover:border-blue-400 pl-4 py-2" :class="{ '!border-blue-400': isPageActive(content.path) }">
+              <NuxtLink
+                :to="content.path"
+                class="text-gray-400 hover:text-blue-300"
+                :class="{ '!text-blue-400 font-semibold': isPageActive(content.path) }"
+                :aria-label="content.title"
+              >
+                {{ content.title }}
+              </NuxtLink>
+            </li>
+          </ul>
         </DisclosurePanel>
       </Disclosure>
       <hr class="!my-8 border-gray-800">
