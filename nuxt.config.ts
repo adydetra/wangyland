@@ -16,10 +16,10 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
-    '@nuxthq/studio',
     '@nuxtjs/sitemap',
     '@vueuse/nuxt',
     'nuxt-og-image',
+    'nuxt-studio',
   ],
 
   fonts: {
@@ -40,6 +40,9 @@ export default defineNuxtConfig({
   },
 
   content: {
+    preview: {
+      api: 'https://api.nuxt.studio',
+    },
     experimental: {
       sqliteConnector: 'native',
     },
@@ -57,6 +60,15 @@ export default defineNuxtConfig({
   image: {
     quality: 70,
     format: ['webp'],
+  },
+
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'adydetra',
+      repo: 'wangyland',
+      branch: 'main',
+    },
   },
 
   devtools: {
