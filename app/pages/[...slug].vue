@@ -1,8 +1,10 @@
 <script lang="ts" setup>
 const route = useRoute();
-const { data: page } = await useAsyncData(route.path, () => {
-  return queryCollection('content').path(route.path).first();
-});
+const [{ data: page }] = await Promise.all([
+  useAsyncData(route.path, () => queryCollection('content').path(route.path).first()),
+  useAsyncData('navigation', () => queryCollectionNavigation('content')),
+  useAsyncData(`surround-${route.path}`, () => queryCollectionItemSurroundings('content', route.path)),
+]);
 
 useSeoMeta({
   title: page.value?.title,
