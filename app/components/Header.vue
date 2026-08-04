@@ -25,14 +25,14 @@ function copyIp() {
       </p>
 
       <p
-        class="text-indigo-100 text-xs md:text-base font-extrabold tracking-wide md:block cursor-pointer transition-all duration-300"
+        class="text-indigo-100 text-xs md:text-base font-extrabold tracking-wide flex items-center cursor-pointer transition-all duration-300"
         :class="copied ? 'text-green-300 scale-105' : 'animate-pulse'"
         title="Click to copy!"
         @click="copyIp"
       >
-        <span class="hidden md:inline-block">IP:</span>
-        {{ copied ? 'Copied!' : 'WANGYLANDID.ATERNOS.ME' }}
-        <Icon class="ml-1 md:ml-2 -mr-1 -mb-1.5 w-4 h-4 lg:w-6 lg:h-6" :name="copied ? 'uim:check' : 'uim:pagelines'" />
+        <span class="hidden md:inline-block mr-1">IP:</span>
+        <span>{{ copied ? 'Copied!' : 'WANGYLANDID.ATERNOS.ME' }}</span>
+        <Icon class="ml-1 md:ml-2 w-4 h-4 lg:w-6 lg:h-6" :name="copied ? 'uim:check' : 'uim:pagelines'" />
       </p>
     </div>
   </header>
