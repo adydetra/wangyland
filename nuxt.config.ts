@@ -31,6 +31,10 @@ export default defineNuxtConfig({
     url: 'https://wangyland.vercel.app',
   },
 
+  sitemap: {
+    zeroRuntime: true,
+  },
+
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [
@@ -39,9 +43,7 @@ export default defineNuxtConfig({
   },
 
   content: {
-    experimental: {
-      sqliteConnector: 'native',
-    },
+
     build: {
       markdown: {
         highlight: {
