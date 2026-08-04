@@ -7,15 +7,14 @@ const links = computed(() => [
   { to: '/changelog', label: 'Changelog', icon: 'pajamas:log' },
 ]);
 
-const { data: allPages } = await useAsyncData('left-navigation', () => {
-  return queryCollection('content')
-    .select('title', 'path')
-    .all();
+const { data: navigation } = await useAsyncData('navigation', () => {
+  return queryCollectionNavigation('content');
 });
 
-function getPagesForCategory(category: string) {
-  const prefix = `/${category.toLowerCase().replace(' ', '-')}`;
-  return (allPages.value || []).filter(page => page.path === prefix || page.path.startsWith(`${prefix}/`));
+const categories = ['Get Started', 'Commands', 'Advanced'];
+
+function getCategoryNode(categoryName: string) {
+  return navigation.value?.find(node => node.title === categoryName);
 }
 
 function isPageActive(path: string | undefined) {
@@ -26,7 +25,7 @@ function isPageActive(path: string | undefined) {
 <template>
   <aside class="relative select-none">
     <div class="py-8 lg:px-4 lg:-mx-4 space-y-6 text-sm hidden lg:block sticky top-0 h-[calc(100vh)] overflow-y-auto">
-      <Disclosure v-for="category in ['Get Started', 'Commands', 'Advanced']" :key="category" v-slot="{ open }" :default-open="true" as="div" class="space-y-6">
+      <Disclosure v-for="category in categories" :key="category" v-slot="{ open }" :default-open="true" as="div" class="space-y-6">
         <DisclosureButton class="flex items-center justify-between w-full pr-6 pt-2">
           <h2 class="text-gray-300 font-bold">
             {{ category }}
@@ -34,8 +33,20 @@ function isPageActive(path: string | undefined) {
           <Icon name="octicon:chevron-right-12" :class="open && 'rotate-90 transform'" />
         </DisclosureButton>
         <DisclosurePanel>
-          <ul v-for="content in getPagesForCategory(category)" :key="content.path" class="pl-2">
-            <li class="border-l border-gray-700 hover:border-blue-400 pl-4 py-2" :class="{ '!border-blue-400': isPageActive(content.path) }">
+          <ul v-if="getCategoryNode(category)" class="pl-2">
+            <!-- Parent (Index) Page -->
+            <li v-if="getCategoryNode(category)?.path" class="border-l border-gray-700 hover:border-blue-400 pl-4 py-2" :class="{ '!border-blue-400': isPageActive(getCategoryNode(category)?.path) }">
+              <NuxtLink
+                :to="getCategoryNode(category)!.path"
+                class="text-gray-400 hover:text-blue-300"
+                :class="{ '!text-blue-400 font-semibold': isPageActive(getCategoryNode(category)?.path) }"
+                :aria-label="getCategoryNode(category)?.title"
+              >
+                {{ getCategoryNode(category)?.title }}
+              </NuxtLink>
+            </li>
+            <!-- Children Pages -->
+            <li v-for="content in getCategoryNode(category)?.children" :key="content.path" class="border-l border-gray-700 hover:border-blue-400 pl-4 py-2" :class="{ '!border-blue-400': isPageActive(content.path) }">
               <NuxtLink
                 :to="content.path"
                 class="text-gray-400 hover:text-blue-300"

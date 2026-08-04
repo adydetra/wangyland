@@ -15,5 +15,7 @@ defineOgImage('OpenGraph', {
 
 <template>
   <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#8f94fb 0%,#4e54c8 50%,#4A00E0 100%)" />
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
