@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    'nuxt-studio',
   ],
 
   fonts: {
@@ -32,7 +31,7 @@ export default defineNuxtConfig({
     url: 'https://wangyland.vercel.app',
   },
 
-  css: ['./app/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
   vite: {
     plugins: [
       tailwindcss(),
@@ -40,9 +39,6 @@ export default defineNuxtConfig({
   },
 
   content: {
-    preview: {
-      api: 'https://api.nuxt.studio',
-    },
     experimental: {
       sqliteConnector: 'native',
     },
@@ -60,15 +56,6 @@ export default defineNuxtConfig({
   image: {
     quality: 70,
     format: ['webp'],
-  },
-
-  studio: {
-    repository: {
-      provider: 'github',
-      owner: 'adydetra',
-      repo: 'wangyland',
-      branch: 'main',
-    },
   },
 
   devtools: {
