@@ -4,7 +4,7 @@ const list = [
   { label: 'Welcome', icon: '🚀', class: 'md:hidden' },
 ];
 
-const { copy } = useClipboard();
+const { copy, copied } = useClipboard();
 
 function copyIp() {
   copy('wangylandid.aternos.me:56345');
@@ -25,13 +25,14 @@ function copyIp() {
       </p>
 
       <p
-        class="text-indigo-100 text-xs md:text-base font-extrabold tracking-wide animate-pulse md:block cursor-pointer"
+        class="text-indigo-100 text-xs md:text-base font-extrabold tracking-wide md:block cursor-pointer transition-all duration-300"
+        :class="copied ? 'text-green-300 scale-105' : 'animate-pulse'"
         title="Click to copy!"
         @click="copyIp"
       >
         <span class="hidden md:inline-block">IP:</span>
-        WANGYLANDID.ATERNOS.ME
-        <Icon class="ml-1 md:ml-2 -mr-1 -mb-1.5 w-4 h-4 lg:w-6 lg:h-6" name="uim:pagelines" />
+        {{ copied ? 'Copied!' : 'WANGYLANDID.ATERNOS.ME' }}
+        <Icon class="ml-1 md:ml-2 -mr-1 -mb-1.5 w-4 h-4 lg:w-6 lg:h-6" :name="copied ? 'uim:check' : 'uim:pagelines'" />
       </p>
     </div>
   </header>
