@@ -1,14 +1,12 @@
 <script lang="ts" setup>
 const route = useRoute();
-const [{ data: page }] = await Promise.all([
-  useAsyncData(route.path, () => queryCollection('content').path(route.path).first()),
-  useAsyncData('navigation', () => queryCollectionNavigation('content')),
-  useAsyncData(`surround-${route.path}`, () => queryCollectionItemSurroundings('content', route.path)),
-]);
+const { data: page, status } = useAsyncData(route.path, () => queryCollection('content').path(route.path).first());
+useAsyncData('navigation', () => queryCollectionNavigation('content'));
+useAsyncData(`surround-${route.path}`, () => queryCollectionItemSurroundings('content', route.path));
 
 useSeoMeta({
-  title: page.value?.title,
-  description: page.value?.description,
+  title: () => page.value?.title,
+  description: () => page.value?.description,
 });
 
 const content
@@ -35,7 +33,15 @@ const currentCategory = computed(() => {
   <div>
     <section class="grid grid-cols-11 mx-auto">
       <SideLeft class="col-span-2 hidden lg:block" />
-      <article v-if="page" :class="content">
+      <article v-if="status === 'pending'" :class="content">
+        <div class="animate-pulse space-y-4">
+          <div class="h-8 bg-gray-800 rounded w-1/3" />
+          <div class="h-4 bg-gray-800 rounded w-full" />
+          <div class="h-4 bg-gray-800 rounded w-5/6" />
+          <div class="h-4 bg-gray-800 rounded w-4/6" />
+        </div>
+      </article>
+      <article v-else-if="page" :class="content">
         <span v-if="currentCategory" class="font-bold text-blue-500">{{ currentCategory }}</span>
         <ContentRenderer :value="page" />
         <PrevNext />

@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 const route = useRoute();
-const { data: surround } = await useAsyncData(`surround-${route.path}`, () => {
+const { data: surround } = useAsyncData(`surround-${route.path}`, () => {
   return queryCollectionItemSurroundings('content', route.path);
 });
 

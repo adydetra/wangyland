@@ -7,7 +7,7 @@ const links = computed(() => [
   { to: '/changelog', label: 'Changelog', icon: 'pajamas:log' },
 ]);
 
-const { data: navigation } = await useAsyncData('navigation', () => {
+const { data: navigation } = useAsyncData('navigation', () => {
   return queryCollectionNavigation('content');
 });
 
@@ -35,7 +35,7 @@ function isPageActive(path: string | undefined) {
         <DisclosurePanel>
           <ul v-if="getCategoryNode(category)" class="pl-2">
             <!-- Parent (Index) Page -->
-            <li v-if="getCategoryNode(category)?.path" class="border-l border-gray-700 hover:border-blue-400 pl-4 py-2" :class="{ '!border-blue-400': isPageActive(getCategoryNode(category)?.path) }">
+            <li v-if="getCategoryNode(category)?.page" class="border-l border-gray-700 hover:border-blue-400 pl-4 py-2" :class="{ '!border-blue-400': isPageActive(getCategoryNode(category)?.path) }">
               <NuxtLink
                 :to="getCategoryNode(category)!.path"
                 class="text-gray-400 hover:text-blue-300"

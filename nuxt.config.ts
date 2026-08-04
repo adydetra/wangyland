@@ -60,6 +60,11 @@ export default defineNuxtConfig({
     format: ['webp'],
   },
 
+  routeRules: {
+    '/': { prerender: true },
+    '/**': { isr: true },
+  },
+
   devtools: {
     enabled: true,
   },
