@@ -9,7 +9,7 @@ const links = computed(() => [
 
 const { data: navigation } = useAsyncData('navigation', () => {
   return queryCollectionNavigation('content');
-});
+}, { lazy: true });
 
 const categories = ['Get Started', 'Commands', 'Advanced'];
 

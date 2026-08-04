@@ -2,7 +2,7 @@
 const route = useRoute();
 const { data: surround } = useAsyncData(`surround-${route.path}`, () => {
   return queryCollectionItemSurroundings('content', route.path);
-});
+}, { lazy: true });
 
 const prev = computed(() => surround.value?.[0]);
 const next = computed(() => surround.value?.[1]);

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 const route = useRoute();
-const { data: page, status } = useAsyncData(route.path, () => queryCollection('content').path(route.path).first());
-useAsyncData('navigation', () => queryCollectionNavigation('content'));
-useAsyncData(`surround-${route.path}`, () => queryCollectionItemSurroundings('content', route.path));
+const { data: page, status } = useAsyncData(route.path, () => queryCollection('content').path(route.path).first(), { lazy: true });
+useAsyncData('navigation', () => queryCollectionNavigation('content'), { lazy: true });
+useAsyncData(`surround-${route.path}`, () => queryCollectionItemSurroundings('content', route.path), { lazy: true });
 
 useSeoMeta({
   title: () => page.value?.title,
